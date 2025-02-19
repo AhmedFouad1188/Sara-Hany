@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $full_mobile_number = $countrycode . $mobile;
 
         // Database connection
-        $conn = new mysqli('localhost', 'root', '', 'client-data');
+        $conn = new mysqli('localhost', 'u677681161_sarahany', '!Yb5b4Ne', 'u677681161_requests');
 
         // Check connection
         if ($conn->connect_error) {
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         // Insert data into requests table
-        $stmt = $conn->prepare("INSERT INTO requests (name, email, country, mobile, promocode) VALUES (?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO promocodes (name, email, country, mobile, promocode) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $name, $email, $country, $full_mobile_number, $promocode);
 
         if ($stmt->execute()) {
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Check if the promo code is valid and not used
         $valid_promo_code = "FIRST50";
-        $check_stmt = $conn->prepare("SELECT used FROM requests WHERE promocode = ? AND mobile = ?"); 
+        $check_stmt = $conn->prepare("SELECT used FROM promocodes WHERE promocode = ? AND mobile = ?"); 
         $check_stmt->bind_param("ss", $promocode, $full_mobile_number); 
         $check_stmt->execute(); 
         $check_stmt->store_result();
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $emailStatusMessage = "Discount Redeemed Successfully.";
 
                     // Update promo code status to used
-                    $update_stmt = $conn->prepare("UPDATE requests SET used = TRUE WHERE name = ? AND email = ? AND country = ? AND mobile = ? AND promocode = ?");
+                    $update_stmt = $conn->prepare("UPDATE promocodes SET used = TRUE WHERE name = ? AND email = ? AND country = ? AND mobile = ? AND promocode = ?");
                     $update_stmt->bind_param("sssss", $name, $email, $country, $full_mobile_number, $promocode);
                     $update_stmt->execute();
 
@@ -85,20 +85,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Server settings
             $mail->SMTPDebug = 0;                                 // Disable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host       = 'smtp.gmail.com';                      // Specify main and backup SMTP servers
+            $mail->Host       = 'smtp.hostinger.com';                      // Specify main and backup SMTP servers
             $mail->SMTPAuth   = true;                             // Enable SMTP authentication
-            $mail->Username   = 'dr.ahmedfouad88@gmail.com';         // SMTP username
-            $mail->Password   = 'uoowzzddzwyiezse';                  // SMTP password
+            $mail->Username   = 'requests@saracr8.com';         // SMTP username
+            $mail->Password   = 'Sararequest@1';                  // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                            // Enable TLS encryption, `ssl` also accepted
-            $mail->Port       = 587;                              // TCP port to connect to
+            $mail->Port       = 465;                              // TCP port to connect to
 
             // Recipients
-            $mail->setFrom('dr.ahmedfouad88@gmail.com', 'Ahmed Fouad');     // Sender's email
-            $mail->addAddress('dr.ahmedfouad88@hotmail.com');           // Add a recipient (replace with your email)
+            $mail->setFrom('$email', '$name');     // Sender's email
+            $mail->addAddress('requests@saracr8.com');           // Add a recipient (replace with your email)
             
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'New Promo Code Submission';
+            $mail->Subject = 'New Request';
             $mail->Body    = "Name: $name<br>
             E-mail: $email<br>
             Country: $country<br>

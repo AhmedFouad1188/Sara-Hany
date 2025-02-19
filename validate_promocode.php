@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$conn = new mysqli('localhost', 'root', '', 'client-data');
+$conn = new mysqli('localhost', 'u677681161_sarahany', '!Yb5b4Ne', 'u677681161_requests');
 
 // Check connection
 if ($conn->connect_error) {
@@ -18,7 +18,7 @@ $valid_promo_code = "FIRST50"; // Define the valid promo code
 
 $response = [];
 if ($promocode === $valid_promo_code) {
-    $check_stmt = $conn->prepare("SELECT used FROM requests WHERE promocode = ? AND mobile = ?");
+    $check_stmt = $conn->prepare("SELECT used FROM promocodes WHERE promocode = ? AND mobile = ?");
     $check_stmt->bind_param("ss", $promocode, $full_mobile_number);
     $check_stmt->execute();
     $check_stmt->store_result();
