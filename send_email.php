@@ -89,16 +89,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPAuth   = true;                             // Enable SMTP authentication
             $mail->Username   = 'requests@saracr8.com';         // SMTP username
             $mail->Password   = 'Sararequest@1';                  // SMTP password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                            // Enable TLS encryption, `ssl` also accepted
-            $mail->Port       = 465;                              // TCP port to connect to
+            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port       = 587;                              // TCP port to connect to
 
             // Recipients
-            $mail->setFrom('$email', '$name');     // Sender's email
+            $mail->setFrom('requests@saracr8.com', 'Sara Cr8');     // Sender's email
             $mail->addAddress('requests@saracr8.com');           // Add a recipient (replace with your email)
+            $mail->addReplyTo($email, $name);
             
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'New Request';
+            $mail->Subject = "New Request From $name ($country)";
             $mail->Body    = "Name: $name<br>
             E-mail: $email<br>
             Country: $country<br>
