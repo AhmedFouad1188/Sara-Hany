@@ -100,15 +100,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = "New Request From $name ($country)";
-            $mail->Body    = "Name: $name<br>
-            E-mail: $email<br>
-            Country: $country<br>
-            Mobile Number: $full_mobile_number<br>
-            Request: $message<br>
-            Budget: $budget<br>
-            Per: $per<br>
-            Promo Code: $promocode<br>
-            Promocode Status: $emailStatusMessage";
+            $mail->Body    = "
+                <!DOCTYPE html>
+                <html>
+                    <head>
+                        <style>
+                            body {
+                                text-align: center;
+                                color: black;
+                                font-size: 20px;
+                            }
+                            h1 {
+                                color: #2133e5;
+                                font-size: 2.5rem;
+                            }
+                            div {
+                                border-color: #2133e5;
+                                border-style: dotted;
+                                padding-left: 5vw;
+                                padding-top: 2vw;
+                            }
+                            p {
+                                font-size: 1.5rem;
+                                text-align: left;
+                            }
+                            strong {
+                                color: #e52174;
+                                text-decoration: underline;
+                                margin-right: 1vw;
+                            }
+                            footer {
+                                padding-top: 2vw;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <header>
+                            <h1>New Request From $name</h1>
+                        </header>
+                        <div>
+                            <p><strong>Name:</strong> $name</p>
+                            <p><strong>E-mail:</strong> $email</p>
+                            <p><strong>Country:</strong> $country</p>
+                            <p><strong>Mobile Number:</strong> $full_mobile_number</p>
+                            <p><strong>Request:</strong> $message</p>
+                            <p><strong>Budget:</strong> $budget</p>
+                            <p><strong>Per:</strong> $per</p>
+                            <p><strong>Promo Code:</strong> $promocode</p>
+                            <p><strong>Promocode Status:</strong> $emailStatusMessage</p>
+                        </div>
+                        <footer>Sara Cr8 - 2025 - www.saracr8.com</footer>
+                    </body>
+                </html>";
 
             $mail->send();
             echo 'Email has been sent.';
