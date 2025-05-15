@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 1vw;
+    font-size: 2.35vw;
 }
 
 body {
@@ -193,11 +193,11 @@ p, img {
 .offcanvas {
     background-color: #141414 !important;
     opacity: 0.8;
-    width: 45vw !important;
+    width: 50vw !important;
 }
 
 .offcanvas svg {
-    width: 8vw;
+    width: 12vw;
     margin-top: 4vw;
     margin-left: 2vw;
     color: #e52174;
@@ -234,7 +234,7 @@ p, img {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 4vw;
+    gap: 7vw;
     font-size: 2.5rem;
     position: relative;
     overflow: hidden !important;
@@ -247,9 +247,9 @@ p, img {
 
 .offcanvas-body img {
     position: absolute;
-    width: 60vw;
+    width: 70vw;
     bottom: -18vw;
-    right: -2vw;
+    right: -5vw;
 }
 
 header {
@@ -281,7 +281,7 @@ header::before {
 }
 
 .saraname {
-    font-size: 7rem;
+    font-size: 6rem;
     text-transform: uppercase;
     letter-spacing: 1.5vw;
     position: absolute;
@@ -293,7 +293,7 @@ header::before {
     font-size: 2.5rem;
     word-spacing: 1vw;
     position: absolute;
-    bottom: 7vw;
+    bottom: 4vw;
 }
 
 .main {
@@ -315,12 +315,12 @@ header::before {
 #about {
     padding-top: 8vw;
     width: 65vw;
-    min-width: 470px;
+    min-width: 300px;
     text-indent: 2vw;
     letter-spacing: 0.08vw;
-    line-height: 2.5vw;
+    line-height: 4.5vw;
     position: relative;
-    margin-bottom: 20vw;
+    margin-bottom: 28vw;
 }
 
 #about::first-letter {
@@ -330,18 +330,18 @@ header::before {
 
 .flags {
     width: 20vw;
-    min-width: 180px;
+    min-width: 155px;
     position: absolute;
-    left: -1vw;
-    bottom: -7vw;
+    left: -2.5vw;
+    bottom: -13vw;
 }
 
 .sign {
     width: 11vw;
-    min-width: 100px;
+    min-width: 75px;
     position: absolute;
     right: 3vw;
-    bottom: -10vw;
+    bottom: -20vw;
 }
 
 .galcat {
@@ -380,7 +380,7 @@ header::before {
 
 .galcat img {
     width: 12.5vw;
-    min-width: 115px;
+    min-width: 94.3px;
     border-radius: 1vw !important;
     padding: 0;
 }
@@ -436,15 +436,27 @@ header::before {
 
 .gal .carousel-inner {
     width: 68vw;
-    min-width: 450px;
+    min-width: 300px;
     height: 45.5vw;
-    min-height: 510px;
+    min-height: 345px;
+    margin-top: 45vw;
+
 }
 
 .gal .carousel-inner img {
     width: 43vw;
-    min-width: 450px;
+    min-width: 300px;
     border-radius: 1vw;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .gal .carousel-inner {
+        height: 44vw;
+    }
+
+    .gal .carousel-inner img {
+        width: 41.5vw;
+    }
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -463,6 +475,8 @@ header::before {
 .carousel-indicators {
     position: relative;
     width: 75vw;
+    min-width: 300px;
+
 }
 
 .pc-cont {
@@ -473,6 +487,8 @@ header::before {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5vw;
+
 }
 
 .pause {
@@ -491,6 +507,11 @@ header::before {
     display: none;
 }
 
+.caption {
+    font-size: 1.39rem;
+    margin-bottom: 1vw;
+}
+
 .gal .tab-pane {
     text-align: center;
 }
@@ -499,10 +520,10 @@ header::before {
     font-size: 2rem;
     letter-spacing: 0.3vw;
     width: 65vw;
-    min-width: 430px;
+    min-width: 290px;
     text-align: center;
     color: #e9e9e9;
-    margin-top: 20vw;
+    margin-top: 50vw;
     margin-bottom: 20vw;
     position: relative;
 }
@@ -527,7 +548,7 @@ header::before {
 
 .ban {
     width: 80vw !important;
-    min-width: 480px;
+    min-width: 300px;
     height: 31vw;
     border-radius: 2vw;
     margin-bottom: 20vw;
@@ -540,6 +561,10 @@ header::before {
     border-radius: 2vw;
 }
 
+#videos {
+    padding-top: 50vw;
+}
+
 .vidcont {
     display: flex;
     flex-direction: row;
@@ -550,7 +575,7 @@ header::before {
     margin-bottom: 20vw;
     gap: 3vw;
     width: 40vw;
-    min-width: 450px;
+    min-width: 310px;
 }
 
 .vidcont div[data-bs-toggle="modal"] {
@@ -583,7 +608,7 @@ header::before {
 
 .vidcont img {
     width: 18vw;
-    min-width: 200px;
+    min-width: 145px;
     border-radius: 1vw;
 }
 
@@ -608,6 +633,10 @@ header::before {
 
 video {
     width: 100%;
+}
+
+#port {
+    padding-top: 65vw;
 }
 
 .download {
@@ -640,10 +669,12 @@ video {
 
 #reviews {
     width: 18vw;
-    min-width: 170px;
+    min-width: 140px;
     display: block;
     filter: drop-shadow(0 0 1vw #5463e9);
     transition: filter 0.8s ease;
+    padding-top: 35vw;
+
 }
 
 #reviews:hover {
@@ -652,15 +683,17 @@ video {
 
 .rev {
     width: 55vw;
-    min-width: 420px;
+    min-width: 300px;
     height: 17vw;
-    min-height: 160px;
+    min-height: 170px;
     border-radius: 2vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 2vw 3vw 1vw 3vw;
     box-shadow: 0 0 2vw 0.2vw #2133e5;
+    margin-bottom: 5vw;
+
 }
 
 .revtitle {
@@ -673,8 +706,8 @@ video {
 }
 
 .stock {
-    font-size: 3.5rem;
-    padding-top: 20vw;
+    font-size: 3rem;
+    padding-top: 70vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -688,11 +721,12 @@ video {
 
 .stock div:not(.imgcont) {
     width: 65vw;
-    min-width: 450px;
+    min-width: 290px;
+    min-height: 60px;
     text-align: left;
     margin: 0.7vw;
     border-radius: 2vw;
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: transform 0.5s ease;
     display: flex;
     flex-direction: row;
@@ -721,8 +755,8 @@ video {
 
 .stock img {
     width: 9vw;
-    min-width: 68px;
-    margin: 0.3vw;
+    min-width: 49px;
+    margin: 0;
     border-radius: 1vw;
 }
 
@@ -768,8 +802,7 @@ video {
     justify-content: center;
     align-items: center;
     padding-bottom: 7vw;
-    width: 98.8vw;
-    min-width: 540px;
+    min-width: 100vw;
 }
 
 #requests p {
@@ -783,7 +816,6 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.7vw;
     position: relative;
     width: 66vw;
 }
@@ -800,9 +832,26 @@ input {
     transition: 0.2s ease-in-out;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input {
+        padding: 0.7vw 0 0.7vw 1vw;
+    }
+}
+
 input:focus {
     outline: none;
     box-shadow: 0 0 0.8vw 0.3vw #e52174;
+}
+
+input, #country, #mobcont {
+    min-width: 270px;
+}
+
+#countrycode {
+    min-width: 50px;
+}
+#mobile {
+    min-width: 221px;
 }
 
 #country {
@@ -857,7 +906,7 @@ option {
 
 #message {
     width: 55.7vw;
-    min-width: 400px;
+    min-width: 270px;
     height: 8vw;
     background-color: #e9e9e9;
     color: #e52174;
@@ -880,12 +929,13 @@ label[for="budget"] {
     justify-content: flex-start;
     align-items: center;
     width: 55.7vw;
-    min-width: 400px;
+    min-width: 270px;
 }
 
 #budget {
     width: 27vw;
-    min-width: 180px;
+    min-width: 135px;
+    font-size: 1.4rem !important;
 }
 
 .radcont {
@@ -895,7 +945,8 @@ label[for="budget"] {
     align-items: center;
     height: 2vw;
     margin-left: auto;
-    gap: 3vw;
+    font-size: 1.24rem;
+    gap: 1.7vw;
 }
 
 label[for="design"] {
@@ -912,9 +963,9 @@ label[for="project"] {
 
 input[type="radio"] {
     width: 1.3vw;
-    min-width: 12px;
+    min-width: 9px;
     margin-right: 0.7vw;
-    margin-bottom: 0.3vw;
+    margin-bottom: 0.5vw;
     outline: none;
     background-color: #e9e9e9;
 }
@@ -929,24 +980,26 @@ input[type="radio"] {
     justify-content: flex-start;
     align-items: center;
     width: 55.7vw;
-    min-width: 400px;
+    min-width: 270px;
 }
 
 label[for="promocode"] {
     width: 27vw;
-    min-width: 180px;
+    min-width: 135px;
 }
 
 #promocode {
     background-image: url(gift.svg);
-    background-size: 2.2vw;
+    background-size: 5vw;
     background-repeat: no-repeat;
-    background-position: 1vw;
-    padding: 0.7vw 0 0.7vw 4vw;
+    background-position: 1.3vw;
+    padding: 0.7vw 0 0.7vw 7.3vw;
     width: 17.85vw;
-    min-width: 119px;
+    min-width: 95px;
     border-radius: 0.5vw 0 0 0.5vw;
     box-shadow: none;
+    font-size: 1.4rem !important;
+
 }
 
 .clear {
@@ -977,7 +1030,8 @@ label[for="promocode"] {
     border-radius: 0.5vw;
     border: none;
     width: 6vw;
-    min-width: 45px;
+    min-width: 30px;
+    font-size: 1.25rem;
     padding: 0.35vw;
     transition: 0.5s ease;
 }
@@ -992,6 +1046,8 @@ label[for="promocode"] {
 
 #promostatus {
     margin-left: auto;
+    font-size: 1.09rem;
+
 }
 
 #submit {
@@ -1028,7 +1084,7 @@ label[for="promocode"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 2;
 }
 
 footer {
@@ -1048,9 +1104,9 @@ footer {
 
 .dear {
     width: 19vw;
-    min-width: 140px;
+    min-width: 95px;
     position: absolute;
-    left: -4vw;
+    left: -7vw;
     filter: drop-shadow(0 0 1vw #5463e9);
     transition: filter 0.8s ease-in-out;
 }
@@ -1082,6 +1138,7 @@ footer .title {
     border-radius: 1vw;
     padding: 1vw;
     margin: auto;
+    display: none;
 }
 
 .conticons {
@@ -1097,7 +1154,7 @@ footer .title {
 
 .conticons svg {
     width: 5vw;
-    min-width: 40px;
+    min-width: 35px;
     stroke: #e9e9e9;
     fill: #e9e9e9;
     transition: 0.3s ease;
@@ -1116,12 +1173,12 @@ footer .title {
 
 .upicon {
     width: 5.5vw !important;
-    min-width: 45px !important;
+    min-width: 40px !important;
 }
 
 .xicon {
     width: 4.3vw !important;
-    min-width: 35px !important;
+    min-width: 30px !important;
     enable-background: new 0 0 24 24;
 }
 
@@ -1132,9 +1189,9 @@ footer .title {
 
 .mail {
     width: 33vw;
-    min-width: 275px;
+    min-width: 210px;
     height: 4.3vw;
-    min-height: 45px;
+    min-height: 35px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1142,7 +1199,8 @@ footer .title {
     border-style: solid;
     border-color: #e52174;
     border-radius: 1vw;
-    margin-bottom: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 7vw;
     overflow: hidden;
 }
 
@@ -1158,7 +1216,7 @@ footer .title {
 
 .mail svg {
     width: 4vw;
-    min-width: 35px;
+    min-width: 23px;
 }
 
 @keyframes mail {
@@ -1205,37 +1263,39 @@ footer .title {
     min-width: 190px;
     height: 4vw;
     min-height: 33px;
-    z-index: 3;
 }
 
 .last {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: auto;
-    z-index: 2;
 }
 
 .copyrt {
     width: 2.2vw;
-    min-width: 18px;
+    min-width: 13px;
     margin-right: 0.3vw;
     margin-bottom: 1vw;
+}
+
+.footerlogo {
+    min-width: 50px;
 }
 
 .last p svg {
     color: #e52174;
     width: 2vw;
-    min-width: 20px;
+    min-width: 13px;
 }
 
 .devlogo {
     width: 7vw;
-    min-width: 65px;
+    min-width: 50px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .carousel-control-next-icon, .carousel-control-prev-icon {
         display: none;
     }
@@ -1280,7 +1340,7 @@ footer .title {
     }
 }
 
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
     .nav1 {
         display: none !important;
     }
@@ -1392,37 +1452,257 @@ footer .title {
     }
 }
 
-@media (min-width: 540px) and (max-width: 576px) {
+@media (min-width: 360px) {
     html {
-        font-size: 1.72vw;
+        font-size: 2.2vw;
+    }
+
+    .offcanvas {
+        width: 50vw !important;
+    }
+
+    .offcanvas svg {
+        width: 10vw;
+    }
+
+    .offcanvas-body {
+        gap: 6vw;
+    }
+
+    .offcanvas-body img {
+        width: 70vw;
+        right: -5vw;
+    }
+
+    .saraname {
+        font-size: 5.8rem;
+    }
+
+    .saratit {
+        bottom: 6vw;
+        font-size: 2.2rem;
+    }
+
+    #about {
+        min-width: 330px;
+        line-height: 3.7vw;
+        margin-bottom: 25vw;
+    }
+
+    .flags {
+        min-width: 160px;
+        left: -2.5vw;
+        bottom: -13vw;
+    }
+
+    .sign {
+        min-width: 80px;
+        bottom: -19vw;
+    }
+
+    .galcat {
+        gap: 1vw;
+    }
+
+    .galcat img {
+        min-width: 106.8px;
+    }
+
+    .galcat .modal-content {
+        width: 97vw !important;
+    }
+
+    .galcat .modal-body {
+        width: 99vw !important;
+        gap: 1vw;
+    }
+
+    .gal .carousel-inner {
+        margin-top: 35vw;
+        min-width: 340px;
+        min-height: 390px;
+    }
+
+    .gal .carousel-inner img {
+        min-width: 340px;
+    }
+
+    .pc-cont {
+        margin-bottom: 5vw;
     }
 
     .caption {
-        font-size: 1.9rem;
+        font-size: 1.64rem;
     }
-    input:not([type="radio"]), #country, #mobcont {
-        min-width: 400px;
-        min-height: 35px;
+
+    .carousel-indicators {
+        min-width: 340px;
+    }
+
+    .quote {
+        min-width: 330px;
+        margin-top: 40vw;
+        margin-bottom: 10vw;
+    }
+
+    .ban {
+        min-width: 340px;
+    }
+
+    #videos {
+        padding-top: 45vw;
+    }
+
+    .vidcont {
+        gap: 4vw;
+        min-width: 340px;
+    }
+
+    .vidcont img {
+        min-width: 160px;
+    }
+
+    #port {
+        padding-top: 45vw;
+    }
+
+    #reviews {
+        padding-top: 30vw;
+        min-width: 140px;
+    }
+
+    .rev {
+        min-width: 340px;
+        min-height: 180px;
+    }
+
+    .stock {
+        padding-top: 80vw;
+        font-size: 3.2rem;
+    }
+
+    .stock div:not(.imgcont) {
+        min-width: 320px;
+        font-size: 2.5rem;
+    }
+
+    .stock img {
+        min-width: 55px;
+        margin: 0;
+    }
+
+    #requests {
+        min-width: 100vw;
+    }
+
+    input, #country, #mobcont {
+        min-width: 300px;
     }
 
     #countrycode {
-        min-width: 60px;
+        min-width: 50px;
     }
 
     #mobile {
-        min-width: 341px;
+        min-width: 251px;
     }
-    #promocode {
-        background-size: 20px;
-        padding-left: 5.5vw;
+
+    #message {
+        min-width: 300px;
     }
-    #submit {
-        min-height: 40px;
+
+    label[for="budget"] {
+        min-width: 300px;
+    }
+
+    #budget {
         min-width: 150px;
+    }
+
+    .radcont {
+        font-size: 1.36rem;
+        gap: 1vw;
+    }
+
+    input[type="radio"] {
+        min-width: 9px;
+        margin-bottom: 0.5vw;
+    }
+
+    .promcont {
+        min-width: 300px;
+    }
+
+    label[for="promocode"] {
+        min-width: 150px;
+    }
+
+    #promocode {
+        min-width: 104px;
+        background-size: 4.5vw;
+        background-position: 1.5vw;
+        padding-left: 7vw;
+    }
+
+    .apply {
+        min-width: 35px;
+        font-size: 1.3rem;
+    }
+
+    .dear {
+        left: -7vw;
+        min-width: 105px;
+    }
+
+    .conticons {
+        min-width: 165px;
+    }
+
+    .conticons svg {
+        min-width: 35px;
+    }
+
+    .upicon {
+        min-width: 40px !important;
+    }
+
+    .xicon {
+        min-width: 30px !important;
+    }
+
+    .mail {
+        margin-top: 2vw;
+        margin-bottom: 7vw;
+        min-width: 225px;
+        min-height: 35px;
+    }
+
+    .mail svg {
+        min-width: 23px;
+    }
+
+    .copyrt {
+        min-width: 14px;
+    }
+
+    .footerlogo {
+        min-width: 60px;
+    }
+
+    .last p svg {
+        min-width: 13px;
+    }
+
+    .devlogo {
+        min-width: 60px;
+    }
+
+    .copyrt, .footerlogo, .devlogo {
+        margin-bottom: 1.7vw !important;
     }
 }
 
-@media (min-width: 412px) and (max-width: 430px) {
+@media (min-width: 412px) {
     html {
         font-size: 1.9vw;
     }
@@ -1557,7 +1837,7 @@ footer .title {
     }
 
     .stock img {
-        min-width: 63px;
+        min-width: 55px;
     }
 
     #requests {
@@ -1639,695 +1919,99 @@ footer .title {
     }
 }
 
-@media (min-width: 390px) and (max-width: 411px) {
-    #about {
-        font-size: 1.8rem;
-        line-height: 5vw !important;
-        margin-top: 7vw !important;
-        margin-bottom: 33vw !important;
-    }
-    .gal .carousel-inner {
-        margin-top: 50vw !important;
-    }
-    .quote {
-        margin-top: 60vw !important;
-    }
-    #videos {
-        padding-top: 60vw !important;
-    }
-    #port {
-        padding-top: 70vw !important;
-    }
-    #reviews {
-        padding-top: 50vw !important;
-    }
-    .stock {
-        margin-top: 5vw;
-    }
-    .stock div:not(.imgcont) {
-        min-width: 350px !important;
-    }
-    .stock img {
-        min-width: 63px !important;
-    }
-    .radcont {
-        font-size: 1.3rem !important;
-        gap: 1.5vw;
-    }
-    #promocode {
-        background-size: 4.5vw !important;
-        background-position: 1.2vw !important;
-        padding-left: 6.5vw !important;
-        font-size: 1.4rem !important;
-    }
-}
-
-@media (min-width: 375px) and (max-width: 411px) {
-    .caption {
-        font-size: 1.51rem !important;
-    }
-    .quote {
-        font-size: 1.9rem;
-    }
-    .rev {
-        min-height: 180px !important;
-    }
-    .stock div:not(.imgcont) {
-        min-width: 340px !important;
-    }
-    .radcont {
-        font-size: 1.4rem !important;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 390px) {
+@media (min-width: 540px) {
     html {
-        font-size: 2.2vw;
-    }
-
-    .offcanvas {
-        width: 50vw !important;
+        font-size: 1.5vw;
     }
 
     .offcanvas svg {
-        width: 10vw;
+        width: 8vw;
     }
 
     .offcanvas-body {
-        gap: 6vw;
+        gap: 4vw;
     }
 
     .offcanvas-body img {
-        width: 70vw;
-        right: -5vw;
-    }
-
-    .saraname {
-        font-size: 5.8rem;
-    }
-
-    .saratit {
-        bottom: 6vw;
-        font-size: 2.2rem;
-    }
-
-    #about {
-        min-width: 330px;
-        line-height: 3.7vw;
-        margin-bottom: 25vw;
-    }
-
-    .flags {
-        min-width: 160px;
-        left: -2.5vw;
-        bottom: -13vw;
-    }
-
-    .sign {
-        min-width: 80px;
-        bottom: -19vw;
-    }
-
-    .galcat {
-        gap: 1vw;
-    }
-
-    .galcat img {
-        min-width: 106.8px;
-    }
-
-    .galcat .modal-content {
-        width: 97vw !important;
-    }
-
-    .galcat .modal-body {
-        width: 99vw !important;
-        gap: 1vw;
+        width: 340px;
+        right: 1vw;
     }
 
     .gal .carousel-inner {
-        margin-top: 35vw;
-        min-width: 340px;
-        min-height: 390px;
-    }
-
-    .gal .carousel-inner img {
-        min-width: 340px;
-    }
-
-    .pc-cont {
-        margin-bottom: 5vw;
+        margin-top: 25vw !important;
+        min-height: 470px !important;
     }
 
     .caption {
-        font-size: 1.64rem;
-    }
-
-    .carousel-indicators {
-        min-width: 340px;
-    }
-
-    .quote {
-        min-width: 320px;
-        margin-top: 40vw;
-        margin-bottom: 10vw;
-    }
-
-    .ban {
-        min-width: 340px;
+        font-size: 1.9rem;
     }
 
     #videos {
-        padding-top: 45vw;
-    }
-
-    .vidcont {
-        gap: 4vw;
-        min-width: 340px;
-    }
-
-    .vidcont img {
-        min-width: 160px;
+        padding-top: 30vw;
     }
 
     #port {
-        padding-top: 45vw;
+        padding-top: 50vw;
+    }
+
+    .download {
+        margin-bottom: 30vw;
     }
 
     #reviews {
         padding-top: 30vw;
-        min-width: 140px;
-    }
-
-    .rev {
-        min-width: 340px;
-        min-height: 130px;
     }
 
     .stock {
-        padding-top: 80vw;
-        font-size: 3.2rem;
+        padding-top: 20vw;
     }
 
-    .stock div:not(.imgcont) {
-        min-width: 320px;
-        font-size: 2.5rem;
-    }
-
-    .stock img {
-        min-width: 59px;
-        margin: 0;
-    }
-
-    #requests {
-        min-width: 100vw;
-    }
-
-    input, #country, #mobcont {
-        min-width: 300px;
-    }
-
-    #countrycode {
-        min-width: 50px;
-    }
-
-    #mobile {
-        min-width: 251px;
-    }
-
-    #message {
-        min-width: 300px;
-    }
-
-    label[for="budget"] {
-        min-width: 300px;
-    }
-
-    #budget {
-        min-width: 150px;
-    }
-
-    .radcont {
-        font-size: 1.44rem;
-        gap: 1vw;
-    }
-
-    input[type="radio"] {
-        min-width: 9px;
-        margin-bottom: 0.5vw;
-    }
-
-    .promcont {
-        min-width: 300px;
-    }
-
-    label[for="promocode"] {
-        min-width: 150px;
-    }
-
-    #promocode {
-        min-width: 104px;
-        background-size: 4.5vw;
-        background-position: 1.5vw;
-        padding-left: 7vw;
-    }
-
-    .apply {
-        min-width: 35px;
-        font-size: 1.3rem;
-    }
-
-    .dear {
-        left: -7vw;
-        min-width: 105px;
-    }
-
-    .conticons {
-        min-width: 165px;
-    }
-
-    .conticons svg {
-        min-width: 35px;
-    }
-
-    .upicon {
-        min-width: 40px !important;
-    }
-
-    .xicon {
-        min-width: 30px !important;
-    }
-
-    .mail {
-        margin-top: 2vw;
-        margin-bottom: 7vw;
-        min-width: 225px;
+    input:not([type="radio"]), #country, #mobcont {
+        min-width: 400px;
         min-height: 35px;
     }
 
-    .mail svg {
-        min-width: 23px;
-    }
-
-    .copyrt {
-        min-width: 14px;
-    }
-
-    .footerlogo {
+    #countrycode {
         min-width: 60px;
     }
 
-    .last p svg {
-        min-width: 13px;
+    #mobile {
+        min-width: 341px;
     }
 
-    .devlogo {
-        min-width: 60px;
-    }
-
-    .copyrt, .footerlogo, .devlogo {
-        margin-bottom: 1.7vw !important;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 0) {
-    html {
-        font-size: 2vw;
-    }
-
-    .offcanvas-body {
-        gap: 7vw;
-    }
-
-    .offcanvas-body img {
-        min-width: 350px;
-        right: -10vw;
-    }
-    
-    #about {
-        min-width: 350px;
-        line-height: 5vw;
-    }
-
-    .flags {
-        bottom: -14vw;
-    }
-
-    .sign {
-        bottom: -22vw;
-    }
-
-    .galcat img {
-        min-width: 122px;
-    }
-
-    .gal .carousel-inner {
-        height: 44vw;
-        min-height: 430px;
-        min-width: 380px;
-    }
-
-    .gal .carousel-inner img {
-        width: 41.5vw;
-        min-width: 380px;
-    }
-
-    .quote {
-        min-width: 370px;
-    }
-
-    .ban {
-        min-width: 380px;
-        min-height: 145px;
-    }
-
-    .vidcont {
-        min-width: 380px;
-    }
-
-    .vidcont img {
-        min-width: 180px;
-    }
-
-    .rev {
-        min-width: 370px;
-    }
-
-    .stock div:not(.imgcont) {
-        min-width: 380px;
-        font-size: 2.8rem;
-    }
-
-    #requests {
-        width: 98.7vw !important;
+    #message {
         min-width: 400px;
     }
 
-    input, #country, #message {
-        padding: 2vw;
-        min-width: 350px;
-    }
-
-    #mobcont {
-        min-width: 350px;
-    }
-
-    #countrycode {
-        min-width: 70px;
-    }
-
-    #mobile {
-        min-width: 280px;
-    }
-
     label[for="budget"] {
-        min-width: 350px;
-    }
-
-    .radcont {
-        font-size: 1.45rem;
-    }
-
-    input[type="radio"] {
-        min-width: 2.7vw;
+        min-width: 400px;
     }
 
     .promcont {
-        min-width: 350px;
+        min-width: 400px;
     }
-
+    
     #promocode {
-        min-width: 118px;
-        padding: 2vw 0 2vw 6vw;
-        background-size: 4vw;
+        background-size: 20px;
+        padding-left: 5.5vw;
+        min-width: 105px;
     }
-
-    .clear {
-        font-size: 1.7rem;
-        padding-right: 3vw;
-    }
-
-    #promostatus {
-        font-size: 1.35rem;
+    
+    #submit {
+        min-height: 40px;
+        min-width: 150px;
     }
 
     .dear {
-        left: -10vw;
-    }
-
-    .mail {
-        min-width: 240px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 344px) {
-    html {
-        font-size: 2.35vw;
-    }
-
-    .offcanvas {
-        width: 50vw !important;
-    }
-
-    .offcanvas svg {
-        width: 12vw;
-    }
-
-    .offcanvas-body {
-        gap: 7vw;
-    }
-
-    .offcanvas-body img {
-        width: 70vw;
-        right: -5vw;
-    }
-
-    .saraname {
-        font-size: 6rem;
-    }
-
-    .saratit {
-        bottom: 4vw;
-    }
-
-    #about {
-        min-width: 300px;
-        line-height: 4.5vw;
-        margin-bottom: 28vw;
-    }
-
-    .flags {
-        min-width: 155px;
-        left: -2.5vw;
-        bottom: -13vw;
-    }
-
-    .sign {
-        min-width: 75px;
-        bottom: -20vw;
-    }
-
-    .galcat img {
-        min-width: 94.3px;
-    }
-
-    .gal .carousel-inner {
-        min-width: 300px;
-        min-height: 345px;
-        margin-top: 45vw;
-    }
-
-    .gal .carousel-inner img {
-        min-width: 300px;
-    }
-
-    .pc-cont {
-        margin-bottom: 5vw;
-    }
-
-    .caption {
-        font-size: 1.39rem;
-        margin-bottom: 1vw;
-    }
-
-    .carousel-indicators {
-        min-width: 300px;
-    }
-
-    .quote {
-        margin-top: 50vw;
-        min-width: 290px;
-    }
-
-    .ban {
-        min-width: 300px;
-    }
-
-    #videos {
-        padding-top: 50vw;
-    }
-
-    .vidcont {
-        min-width: 310px;
-    }
-
-    .vidcont img {
-        min-width: 145px;
-    }
-
-    #port {
-        padding-top: 65vw;
-    }
-
-    #reviews {
-        padding-top: 35vw;
         min-width: 140px;
     }
 
-    .rev {
-        min-width: 300px;
-        min-height: 170px;
-        margin-bottom: 5vw;
-    }
-
-    .stock {
-        font-size: 3rem;
-        padding-top: 70vw;
-    }
-
-    .stock div:not(.imgcont) {
-        min-width: 290px;
-        min-height: 60px;
-        font-size: 2.5rem;
-    }
-
-    .stock img {
-        min-width: 49px;
-        margin: 0;
-    }
-
-    #requests {
-        min-width: 100vw;
-    }
-
-    input, #country, #mobcont {
-        min-width: 270px;
-    }
-
-    #countrycode {
-        min-width: 50px;
-    }
-
-    #mobile {
-        min-width: 221px;
-    }
-
-    #message {
-        min-width: 270px;
-    }
-
-    label[for="budget"] {
-        min-width: 270px;
-    }
-
-    #budget {
-        min-width: 135px;
-        font-size: 1.4rem !important;
-    }
-
-    .radcont {
-        font-size: 1.24rem;
-        gap: 1.7vw;
-    }
-
-    input[type="radio"] {
-        min-width: 9px;
-        margin-bottom: 0.5vw;
-    }
-
-    .promcont {
-        min-width: 270px;
-    }
-
-    label[for="promocode"] {
-        min-width: 135px;
-    }
-
-    #promocode {
-        min-width: 95px;
-        background-size: 5vw;
-        background-position: 1.3vw;
-        padding-left: 7.3vw;
-        font-size: 1.4rem !important;
-    }
-
-    .apply {
-        min-width: 30px;
-        font-size: 1.25rem;
-    }
-
-    #promostatus {
-        font-size: 1.09rem;
-    }
-
-    .dear {
-        left: -7vw;
-        min-width: 95px;
-    }
-
-    .qrcode {
-        display: none;
-    }
-
-    .conticons svg {
-        min-width: 35px;
-    }
-
-    .upicon {
-        min-width: 40px !important;
-    }
-
-    .xicon {
-        min-width: 30px !important;
-    }
-
     .mail {
-        margin-top: 2vw;
-        margin-bottom: 7vw;
-        min-width: 210px;
-        min-height: 35px;
-    }
-
-    .mail svg {
-        min-width: 23px;
-    }
-
-    .last {
-        font-size: 1.3rem;
-    }
-
-    .copyrt {
-        min-width: 13px;
-    }
-
-    .footerlogo {
-        min-width: 50px;
-    }
-
-    .last p svg {
-        min-width: 13px;
-    }
-
-    .devlogo {
-        min-width: 50px;
+        min-width: 250px;
     }
 }
 
-@media (min-width: 577px) and (max-width: 1200px) {
-    html {
-        font-size: 1.71vw;
-    }
-
+@media (min-width: 712px) {
     .iconcont {
         margin: 1.3vw;
         min-width: 57px;
@@ -2343,7 +2027,6 @@ footer .title {
     }
 
     .saraname {
-        font-size: 6rem;
         bottom: 7vw;
     }
 
@@ -2353,32 +2036,30 @@ footer .title {
 
     #about {
         min-width: 490px;
-        line-height: 4vw;
         margin-top: 7vw;
-        margin-bottom: 20vw;
     }
 
     .flags {
-        min-width: 230px;
-        bottom: -9vw;
+        min-width: 240px;
+        bottom: -12vw;
         left: -1.8vw;
     }
 
     .sign {
-        min-width: 130px;
-        bottom: -15vw;
+        min-width: 140px;
+        bottom: -18vw;
     }
 
     .galcat img {
-        min-width: 119px;
+        min-width: 160px;
     }
 
     .modal p {
-        font-size: 0.94rem;
+        font-size: 1.45rem;
     }
 
     .gal .carousel-inner {
-        min-height: 580px;
+        min-height: 580px !important;
         min-width: 500px;
         margin-top: 30vw;
     }
@@ -2446,7 +2127,7 @@ footer .title {
 
     .rev {
         min-width: 500px;
-        min-height: 260px;
+        min-height: 300px;
     }
 
     .stock {
@@ -2473,20 +2154,11 @@ footer .title {
 
     form {
         min-width: 570px;
-        gap: 2vw;
     }
 
     input:not([type="radio"]), #country, #mobcont {
         min-width: 260px;
         min-height: 40px;
-    }
-
-    input:not(#promocode, #countrycode, #mobile), #country, #message, .radcont {
-        margin-bottom: 1.5vw !important;
-    }
-
-    #mobcont {
-        margin-bottom: 1.5vw;
     }
 
     #countrycode {
@@ -2552,7 +2224,7 @@ footer .title {
     }
 
     .dear {
-        min-width: 175px;
+        min-width: 200px;
     }
 
     .conticons {
@@ -2593,24 +2265,23 @@ footer .title {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-    .galcat {
-        width: 600px;
-    }
+@media (min-width: 768px) {
     .galcat img {
-        min-width: 130px;
+        min-width: 170px;
     }
-    .caption {
-        font-size: 1.44rem;
+
+    .modal p {
+        font-size: 1.42rem;
     }
+    
     .rev {
-        min-height: 285px;
+        min-height: 350px;
     }
     .stock div:not(.imgcont) {
         min-width: 550px;
     }
     .stock img {
-        min-width: 90px;
+        min-width: 85px;
     }
     input:not([type="radio"]), #country, #mobcont {
         min-width: 277px;
@@ -2647,34 +2318,33 @@ footer .title {
     }
 }
 
-@media (min-width: 577px) and (max-width: 819px) {
-    #requests {
-        width: 100vw !important;
-    }
-}
-
-@media (min-width: 820px) and (max-width: 1200px) {
-    html {
-        font-size: 1.6vw;
-    }
+@media (min-width: 820px) {
     .galcat img {
-        min-width: 137px;
+        min-width: 180px;
     }
+
+    .modal p {
+        font-size: 1.41rem;
+    }
+    
     .gal .carousel-inner {
         min-width: 570px;
-        min-height: 655px;
+        min-height: 650px !important;
     }
     .gal .carousel-inner img {
         min-width: 570px !important;
     }
-    .caption {
-        font-size: 1.61rem;
-    }
+    
     .carousel-indicators {
         min-width: 570px;
     }
+
+    .rev {
+        min-height: 420px;
+    }
+
     #requests {
-        width: 98.2vw !important;
+        min-width: 805px;
     }
 
     input:not([type="radio"]), #country, #mobcont {
@@ -2710,7 +2380,7 @@ footer .title {
         min-width: 170px;
     }
     .dear {
-        min-width: 190px;
+        min-width: 220px;
     }
     .qrcode {
         min-width: 160px;
@@ -2732,9 +2402,17 @@ footer .title {
     }
 }
 
-@media (min-width: 853px) and (max-width: 1200px) {
+@media (min-width: 853px) {
+    .modal p {
+        font-size: 1.36rem;
+    }
+    
     .rev {
-       min-height: 295px;
+       min-height: 430px;
+    }
+
+    #requests {
+        min-width: 838px;
     }
     form {
         min-width: 700px;
@@ -2775,33 +2453,44 @@ footer .title {
         min-height: 60px !important;
     }
     .dear {
-        min-width: 195px;
+        min-width: 225px;
     }
 }
 
-@media (min-width: 912px) and (max-width: 1200px) {
-    html {
-        font-size: 1.75vw;
+@media (min-width: 912px) {
+    .logo{
+        min-width: 200px;
     }
-    .galcat {
-        min-width: 700px;
+    
+    .flags {
+        min-width: 300px;
     }
+
+    .sign {
+        min-width: 170px;
+    }
+    
     .galcat img {
-        min-width: 155px;
+        min-width: 210px;
     }
+
+    .modal p {
+        font-size: 1.48rem;
+    }
+    
     .gal .carousel-inner {
         min-width: 650px;
-        min-height: 750px;
+        min-height: 750px !important;
     }
+    
     .gal .carousel-inner img {
         min-width: 650px !important;
     }
+    
     .pause svg {
         min-width: 70px;
     }
-    .caption {
-        font-size: 1.57rem;
-    }
+    
     .carousel-indicators {
         min-width: 650px;
     }
@@ -2813,7 +2502,6 @@ footer .title {
     }
     .rev {
         min-width: 600px;
-        min-height: 345px;
     }
     .stock div:not(.imgcont) {
         min-width: 650px;
@@ -2870,7 +2558,7 @@ footer .title {
         min-height: 70px !important;
     }
     .dear {
-        min-width: 210px;
+        min-width: 240px;
     }
     .conticons {
         min-width: 290px;
@@ -2881,10 +2569,7 @@ footer .title {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
-    html {
-        font-size: 1.63vw;
-    }
+@media (min-width: 1024px) {
     .iconcont {
         min-width: 70px;
         min-height: 70px;
@@ -2892,37 +2577,41 @@ footer .title {
     .vidic {
         min-width: 53px;
     }
-    .logo {
-        min-width: 190px;
-    }
-    #about {
-        min-width: 700px;
-    }
+    
     .flags {
-        min-width: 300px;
+        min-width: 320px;
     }
     .sign {
-        min-width: 170px;
+        min-width: 180px;
     }
+
     .galcat {
-        min-width: 700px;
+        gap: 0.2vw;
     }
+    
     .galcat img {
-        min-width: 162px;
+        min-width: 178px;
     }
+
+    .galcat p {
+        font-size: 1.9rem;
+    }
+
+    .modal p {
+        font-size: 1.12rem;
+    }
+    
     .gal .carousel-inner {
-        min-width: 700px;
-        min-height: 820px;
+        min-height: 820px !important;
     }
     .gal .carousel-inner img {
         min-width: 700px !important;
     }
+    
     .pause svg {
         min-width: 80px;
     }
-    .caption {
-        font-size: 1.6rem;
-    }
+    
     .carousel-indicators {
         min-width: 700px !important;
     }
@@ -2931,7 +2620,7 @@ footer .title {
         min-height: 80px;
     }
     .rev {
-        min-height: 360px;
+        min-height: 520px;
     }
     .stock img {
         min-width: 113px;
@@ -2984,15 +2673,108 @@ footer .title {
         font-size: 1.8rem !important;
     }
     .dear {
-        min-width: 230px;
+        min-width: 250px;
     }
     .copyrt, .last p svg {
         min-width: 30px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.2vw;
+    }
+
+    .iconcont {
+        min-width: 3vw;
+        min-height: 3vw;
+        margin: 0.5vw;
+    }
+
+    .vidic {
+        min-width: 2vw;
+    }
+
+    #about {
+        font-size: 1.5rem;
+        line-height: 3vw;
+    }
+
+    .flags {
+        min-width: 280px;
+        bottom: -8vw;
+    }
+
+    .sign {
+        min-width: 160px;
+        bottom: -12vw;
+    }
+
+    .galcat {
+        margin-bottom: 5vw !important;
+    }
+
+    .galcat img {
+        min-width: 160px;
+    }
+
+    .galcat p {
+        font-size: 1.5rem;
+    }
+
+    .galcat .modal-content, .galcat .modal-body {
+        width: 70vw !important;
+    }
+
+    .modal p {
+        font-size: 1rem;
+    }
+
+    .gal .carousel-inner {
+        margin-top: 0vw !important;
+        min-width: 500px !important;
+        min-height: 580px !important;
+    }
+
+    .gal .carousel-inner img {
+        min-width: 500px !important;
+    }
+
+    .pc-cont {
+        bottom: -2.5vw;
+    }
+
+    .pause svg {
+        min-width: 50px;
+        margin-bottom: 0.3vw;
+    }
+
+    .caption {
+        font-size: 1.5rem;
+    }
+
+    .ban {
+        width: 80vw !important;
+    }
+
+    .rev {
+        min-height: 265px;
+    }
+
+    .revtitle, .revtxt {
+        font-size: 1.5rem;
+    }
+
+    .stockdis {
+        font-size: 1.7rem !important;
+    }
+
     #requests {
         width: 98.8vw !important;
+    }
+
+    #requests p {
+        font-size: 3rem;
+        text-align: center;
     }
 }
