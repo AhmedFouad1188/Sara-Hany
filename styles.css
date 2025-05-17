@@ -15,13 +15,13 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 2.35vw;
+    font-size: 1vw;
 }
 
 body {
-    background-color: #141414 !important;
-    color: #e9e9e9 !important;
-    font-family: "Century Gothic" !important;
+    background-color: #141414;
+    color: #e9e9e9;
+    font-family: "Century Gothic";
     padding: 0 !important;
 }
 
@@ -33,151 +33,14 @@ p, img {
 }
 
 .nav1 {
-    position: fixed !important;
-    right: 2vw;
-    z-index: 2;
-    height: 100vh;
-}
-
-.nav1 a {
-    width: 100%;
-    height: 100%;
-}
-
-.iconcont {
-    background-color: #2133e5;
-    border-radius: 50%;
-    width: 4vw;
-    min-width: 50px;
-    height: 4vw;
-    min-height: 50px;
-    margin: 0.5vw;
-    transition: 0.3s ease;
-    overflow: hidden;
-}
-
-.iconcont:hover {
-    background-color: #e52174;
-}
-
-.iconcont a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon {
-    stroke: #e9e9e9;
-    fill: #e9e9e9;
-    width: 100%;
-    height: 100%;
-}
-
-.homeic {
-    stroke-width: 0.5;
-}
-
-@keyframes home {
-    from {
-        transform: translateY(5vw);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-.iconcont:hover .homeic {
-    animation-name: home;
-    animation-duration: 0.5s;
-    position: relative;
-}
-
-.aboutic {
-    stroke-width: 0.5;
-    transition: transform 0.5s ease;
-}
-
-.iconcont:hover .aboutic {
-    transform: rotate(360deg);
-}
-
-.galic {
-    transition: transform 0.3s ease;
-}
-
-.iconcont:hover .galic {
-    transform: rotateY(360deg);
-}
-
-.vidic {
-    transition: transform 0.3s ease;
-    width: 2.7vw;
-    min-width: 35px;
-    enable-background: new 0 0 130.001 95.001;
-    fill: none;
-    stroke: #e9e9e9;
-    stroke-width: 11;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-}
-
-.iconcont:hover .vidic {
-    transform: rotateY(360deg);
-}
-
-@keyframes port {
-    from {
-        transform: translateY(-4vw);
-    }
-
-    to {
-        transform: translateY(0);
-    }
-}
-
-.iconcont:hover .port {
-    animation: port 0.5s ease;
-    position: relative;
-}
-
-.revic {
-    stroke-width: 15;
-    transition: transform 0.5s ease;
-}
-
-@keyframes rev {
-    from {
-        transform: translateX(-4vw);
-    }
-
-    to {
-        transform: translateX(4vw);
-    }
-}
-
-.iconcont:hover .revic {
-    animation: rev 1s ease infinite;
-    position: relative;
-    transform: scale(1.2);
-}
-
-.reqic {
-    stroke-width: 0.05;
-    transition: transform 0.5s ease;
-}
-
-.iconcont:hover .reqic {
-    transform: rotate(-25deg) scale(1.2);
+    display: none;
 }
 
 .nav2 {
-    position: fixed !important;
+    position: fixed;
     top: 4vw;
     right: 4vw;
     z-index: 2;
-    display: none !important;
 }
 
 .nav2 button {
@@ -191,7 +54,7 @@ p, img {
 }
 
 .offcanvas {
-    background-color: #141414 !important;
+    background-color: #141414;
     opacity: 0.8;
     width: 50vw !important;
 }
@@ -235,9 +98,9 @@ p, img {
     justify-content: flex-start;
     align-items: center;
     gap: 7vw;
-    font-size: 2.5rem;
+    font-size: 6rem;
     position: relative;
-    overflow: hidden !important;
+    overflow: hidden;
 }
 
 .offcanvas a {
@@ -260,7 +123,6 @@ header {
 }
 
 .sarapic {
-    width: 100vw;
     min-width: 700px;
 }
 
@@ -274,31 +136,31 @@ header::before {
 
 .logo {
     position: absolute;
-    width: 14vw;
-    min-width: 100px;
-    top: 5vw;
-    left: 5vw;
+    width: 30vw;
+    max-width: 200px;
+    top: 0vw;
+    left: 0vw;
 }
 
 .saraname {
-    font-size: 6rem;
+    font-size: 14rem;
     text-transform: uppercase;
     letter-spacing: 1.5vw;
     position: absolute;
-    bottom: 9vw;
+    bottom: 20vw;
 }
 
 .saratit {
     text-transform: capitalize;
-    font-size: 2.5rem;
+    font-size: 5.5rem;
     word-spacing: 1vw;
     position: absolute;
-    bottom: 4vw;
+    bottom: 15vw;
 }
 
 .main {
-    text-align: justify;
-    font-size: 1.6rem;
+    text-align: center;
+    font-size: 4.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,42 +168,41 @@ header::before {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 9rem;
     color: #e52174;
-    padding-top: 4vw;
+    margin-top: 20vw;
+    padding-top: 15vw;
     letter-spacing: 1vw;
 }
 
 #about {
-    padding-top: 8vw;
-    width: 65vw;
-    min-width: 300px;
+    width: 85vw;
+    padding-top: 5vw;
+    text-align: justify;
     text-indent: 2vw;
     letter-spacing: 0.08vw;
     line-height: 4.5vw;
     position: relative;
-    margin-bottom: 28vw;
+    margin-bottom: 25vw;
 }
 
 #about::first-letter {
-    font-size: 4rem;
+    font-size: 10rem;
     color: #e52174;
 }
 
 .flags {
-    width: 20vw;
-    min-width: 155px;
+    width: 50vw;
     position: absolute;
-    left: -2.5vw;
+    left: -3vw;
     bottom: -13vw;
 }
 
 .sign {
-    width: 11vw;
-    min-width: 75px;
+    width: 27vw;
     position: absolute;
     right: 3vw;
-    bottom: -20vw;
+    bottom: -21vw;
 }
 
 .galcat {
@@ -351,7 +212,8 @@ header::before {
     justify-content: center;
     align-items: center;
     margin-top: 1vw;
-    margin-bottom: 3vw !important;
+    margin-bottom: 3vw;
+    gap: 2vw;
 }
 
 .galcat .nav-item {
@@ -360,7 +222,6 @@ header::before {
     align-items: flex-end;
     position: relative;
     cursor: pointer;
-    margin: 0.6vw;
 }
 
 .galcat .nav-item::before {
@@ -379,15 +240,14 @@ header::before {
 }
 
 .galcat img {
-    width: 12.5vw;
-    min-width: 94.3px;
-    border-radius: 1vw !important;
+    width: 30vw;
+    border-radius: 1vw;
     padding: 0;
 }
 
 .galcat p {
     position: absolute;
-    font-size: 1.7rem;
+    font-size: 4.8rem;
     pointer-events: none;
 }
 
@@ -401,7 +261,7 @@ header::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60vw !important;
+    width: 97vw;
     background-color: rgba(20, 20, 20, 0.8) !important;
 }
 
@@ -411,41 +271,37 @@ header::before {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 60vw !important;
+    width: 99vw;
+    gap: 2vw;
 }
 
 .modal-header {
-    border: none !important;
+    border: none;
 }
 
 .modal-title {
-    font-size: 2rem !important;
-    margin-bottom: -2vw !important;
+    font-size: 6rem;
 }
 
 .modal p {
-    font-size: 1.2rem;
+    font-size: 4rem;
 }
 
 .gal .carousel {
-    display: flex !important;
+    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 
 .gal .carousel-inner {
-    width: 68vw;
-    min-width: 300px;
-    height: 45.5vw;
-    min-height: 345px;
+    width: 95vw;
+    height: 107vw !important;
     margin-top: 45vw;
-
 }
 
 .gal .carousel-inner img {
-    width: 43vw;
-    min-width: 300px;
+    width: 95vw !important;
     border-radius: 1vw;
 }
 
@@ -459,36 +315,23 @@ header::before {
     }
 }
 
-.carousel-control-next, .carousel-control-prev {
-    cursor: default !important;
-}
-
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    cursor: pointer;
-}
-
-.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
-    background-color: #e52174;
-    border-radius: 50%;
+    display: none;
 }
 
 .carousel-indicators {
     position: relative;
-    width: 75vw;
-    min-width: 300px;
-
+    width: 95vw;
 }
 
 .pc-cont {
     position: absolute;
     bottom: 0vw;
-    font-size: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5vw;
-
+    margin-bottom: 4.5vw;
 }
 
 .pause {
@@ -499,8 +342,7 @@ header::before {
 
 .pause svg {
     color: #e9e9e9;
-    width: 2.8vw;
-    min-width: 40px;
+    width: 12vw;
 }
 
 .playicon {
@@ -508,22 +350,16 @@ header::before {
 }
 
 .caption {
-    font-size: 1.39rem;
-    margin-bottom: 1vw;
-}
-
-.gal .tab-pane {
-    text-align: center;
+    font-size: 4.3rem;
+    margin-bottom: 1.2vw;
 }
 
 .quote {
-    font-size: 2rem;
+    font-size: 5rem;
     letter-spacing: 0.3vw;
-    width: 65vw;
-    min-width: 290px;
-    text-align: center;
+    width: 90vw;
     color: #e9e9e9;
-    margin-top: 50vw;
+    margin-top: 45vw;
     margin-bottom: 20vw;
     position: relative;
 }
@@ -532,7 +368,7 @@ header::before {
     position: absolute;
     content: '"';
     color: #e52174;
-    font-size: 3rem;
+    font-size: 7rem;
     font-weight: 600;
 }
 
@@ -547,17 +383,14 @@ header::before {
 }
 
 .ban {
-    width: 80vw !important;
-    min-width: 300px;
-    height: 31vw;
+    width: 95vw;
+    height: 36vw;
     border-radius: 2vw;
-    margin-bottom: 20vw;
 }
 
 .ban img {
     width: 100%;
     height: 100%;
-    display: block;
     border-radius: 2vw;
 }
 
@@ -571,11 +404,9 @@ header::before {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 3vw;
-    margin-bottom: 20vw;
-    gap: 3vw;
-    width: 40vw;
-    min-width: 310px;
+    margin-top: 5vw;
+    gap: 4vw;
+    width: 95vw;
 }
 
 .vidcont div[data-bs-toggle="modal"] {
@@ -607,22 +438,20 @@ header::before {
 }
 
 .vidcont img {
-    width: 18vw;
-    min-width: 145px;
+    width: 45vw;
     border-radius: 1vw;
 }
 
 .vidcont svg {
     position: absolute;
-    width: 5vw;
-    min-width: 40px;
+    width: 15vw;
     color: #fefefe;
     pointer-events: none;
     transition: 0.5s ease;
 }
 
 .modal-content {
-    background-color: #141414 !important;
+    background-color: #141414;
 }
 
 .modal-body {
@@ -636,45 +465,39 @@ video {
 }
 
 #port {
-    padding-top: 65vw;
+    padding-top: 70vw;
 }
 
 .download {
-    width: 20vw;
-    min-width: 160px;
-    height: 5vw;
-    min-height: 55px;
-    display: inline-flex !important;
+    width: 45vw;
+    height: 15vw;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2vw;
-    margin-bottom: 20vw;
-    font-size: 2rem !important;
+    margin-top: 5vw;
+    font-size: 6rem;
 }
 
 .btn-custom {
-    color: #e9e9e9 !important;
-    border-color: #e52174 !important;
-    border-width: 0.2vw !important;
-    transition: 1s ease !important;
+    color: #e9e9e9;
+    border-color: #e52174;
+    border-width: 0.2vw;
+    transition: 1s ease;
 }
 
 .btn-custom:hover {
-    background-color: #e52174 !important;
+    background-color: #e52174;
 }
 
 .btn-custom:active {
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
 }
 
 #reviews {
-    width: 18vw;
-    min-width: 140px;
-    display: block;
+    width: 50vw;
+    padding-top: 40vw;
     filter: drop-shadow(0 0 1vw #5463e9);
     transition: filter 0.8s ease;
-    padding-top: 35vw;
-
 }
 
 #reviews:hover {
@@ -682,18 +505,15 @@ video {
 }
 
 .rev {
-    width: 55vw;
-    min-width: 300px;
-    height: 17vw;
-    min-height: 170px;
+    width: 90vw;
+    height: 63vw;
     border-radius: 2vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 2vw 3vw 1vw 3vw;
+    text-align: justify;
+    padding: 3vw;
     box-shadow: 0 0 2vw 0.2vw #2133e5;
-    margin-bottom: 5vw;
-
 }
 
 .revtitle {
@@ -701,13 +521,9 @@ video {
     text-align: center;
 }
 
-.revtxt {
-    font-size: 1.5rem;
-}
-
 .stock {
-    font-size: 3rem;
-    padding-top: 70vw;
+    font-size: 7.3rem;
+    padding-top: 55vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -716,17 +532,16 @@ video {
 }
 
 .stockdis {
-    font-size: 2rem;
+    font-size: 4.2rem;
 }
 
 .stock div:not(.imgcont) {
-    width: 65vw;
-    min-width: 290px;
-    min-height: 60px;
+    width: 95vw;
+    height: 19vw;
     text-align: left;
-    margin: 0.7vw;
+    margin: 1vw;
     border-radius: 2vw;
-    font-size: 2.5rem;
+    font-size: 6.5rem;
     transition: transform 0.5s ease;
     display: flex;
     flex-direction: row;
@@ -754,9 +569,7 @@ video {
 }
 
 .stock img {
-    width: 9vw;
-    min-width: 49px;
-    margin: 0;
+    width: 16vw;
     border-radius: 1vw;
 }
 
@@ -795,19 +608,20 @@ video {
 
 #requests {
     margin-top: 5vw;
-    padding-top: 5vw;
+    padding-top: 12vw;
     background: linear-gradient(to bottom, #2133e5, #2133e5, #141414);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 7vw;
-    min-width: 100vw;
+    width: 100vw;
 }
 
 #requests p {
-    font-size: 3.5rem;
-    margin-bottom: 2vw;
+    font-size: 7rem;
+    margin-bottom: 8vw;
+    text-align: center;
 }
 
 form {
@@ -817,57 +631,24 @@ form {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 66vw;
+    gap: 4vw;
 }
 
-input {
-    width: 27vw;
-    font-size: 1.3rem !important;
+input, #country, #mobcont, #message, label[for="budget"], .promcont {
+    width: 90vw;
+}
+
+input, #country, #countrycode, #mobile, #message, #budget, #promocode {
     font-weight: 600;
     background-color: #e9e9e9;
     color: #e52174;
     border: none;
     border-radius: 0.5vw;
-    padding: 0.5vw 0 0.5vw 1vw;
+    padding: 2vw;
     transition: 0.2s ease-in-out;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    input {
-        padding: 0.7vw 0 0.7vw 1vw;
-    }
-}
-
-input:focus {
-    outline: none;
-    box-shadow: 0 0 0.8vw 0.3vw #e52174;
-}
-
-input, #country, #mobcont {
-    min-width: 270px;
-}
-
-#countrycode {
-    min-width: 50px;
-}
-#mobile {
-    min-width: 221px;
-}
-
-#country {
-    width: 27vw;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 0.5vw;
-    padding: 0.6vw 0 0.6vw 0.7vw;
-    background-color: #e9e9e9;
-    color: #e52174;
-    outline: none;
-    transition: 0.2s ease-in-out;
-}
-
-#country:focus {
+input:focus, #country:focus, #message:focus {
     outline: none;
     box-shadow: 0 0 0.8vw 0.3vw #e52174;
 }
@@ -877,20 +658,15 @@ option {
     font-weight: 600;
 }
 
-#mobcont {
-    width: 27vw;
-    border-radius: 0.5vw;
-}
-
 #countrycode {
-    width: 6vw;
+    width: 20vw;
     pointer-events: none;
-    box-shadow: none;
     border-radius: 0.5vw 0 0 0.5vw;
+    box-shadow: none;
 }
 
 #mobile {
-    width: 21.07vw;
+    width: 70vw;
     border-radius: 0 0.5vw 0.5vw 0;
     border-left: #e52174 dotted 0.2vw;
 }
@@ -905,22 +681,7 @@ option {
 }
 
 #message {
-    width: 55.7vw;
-    min-width: 270px;
-    height: 8vw;
-    background-color: #e9e9e9;
-    color: #e52174;
-    border-radius: 0.5vw;
-    padding: 1vw;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border: none;
-    transition: 0.2s ease-in-out;
-}
-
-#message:focus {
-    outline: none;
-    box-shadow: 0 0 0.8vw 0.3vw #e52174;
+    height: 30vw;
 }
 
 label[for="budget"] {
@@ -928,14 +689,11 @@ label[for="budget"] {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 55.7vw;
-    min-width: 270px;
 }
 
 #budget {
-    width: 27vw;
-    min-width: 135px;
-    font-size: 1.4rem !important;
+    width: 45vw;
+    font-size: 3.6rem;
 }
 
 .radcont {
@@ -945,7 +703,7 @@ label[for="budget"] {
     align-items: center;
     height: 2vw;
     margin-left: auto;
-    font-size: 1.24rem;
+    font-size: 3.4rem;
     gap: 1.7vw;
 }
 
@@ -962,8 +720,7 @@ label[for="project"] {
 }
 
 input[type="radio"] {
-    width: 1.3vw;
-    min-width: 9px;
+    width: 3vw;
     margin-right: 0.7vw;
     margin-bottom: 0.5vw;
     outline: none;
@@ -979,36 +736,29 @@ input[type="radio"] {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width: 55.7vw;
-    min-width: 270px;
 }
 
 label[for="promocode"] {
-    width: 27vw;
-    min-width: 135px;
+    width: 45vw;
 }
 
 #promocode {
     background-image: url(gift.svg);
-    background-size: 5vw;
+    background-size: 4.3vw;
     background-repeat: no-repeat;
     background-position: 1.3vw;
-    padding: 0.7vw 0 0.7vw 7.3vw;
-    width: 17.85vw;
-    min-width: 95px;
+    padding-left: 6.5vw;
+    width: 27.8vw;
+    font-size: 3.15rem;
     border-radius: 0.5vw 0 0 0.5vw;
     box-shadow: none;
-    font-size: 1.4rem !important;
-
 }
 
 .clear {
     border: none;
     background-color: #e9e9e9;
-    font-size: 1.4rem;
     color: #e52174;
-    width: 3.3vw;
-    min-width: 6px;
+    font-size: 3.5rem;
     transition: 0.5s ease;
     cursor: default !important;
     display: flex;
@@ -1029,10 +779,8 @@ label[for="promocode"] {
     color: #e9e9e9;
     border-radius: 0.5vw;
     border: none;
-    width: 6vw;
-    min-width: 30px;
-    font-size: 1.25rem;
-    padding: 0.35vw;
+    padding: 1vw;
+    font-size: 3.5rem;
     transition: 0.5s ease;
 }
 
@@ -1046,22 +794,17 @@ label[for="promocode"] {
 
 #promostatus {
     margin-left: auto;
-    font-size: 1.09rem;
-
+    font-size: 1.18rem;
 }
 
 #submit {
-    width: 15vw;
-    min-width: 140px;
-    height: 4vw;
-    min-height: 35px;
+    width: 40vw;
+    height: 12vw;
     border-radius: 0.5vw;
     border: none;
     color: #e9e9e9;
     background-color: #e52174;
-    font-size: 1.7rem !important;
     font-weight: 500;
-    padding-right: 1vw;
     cursor: pointer;
     transition: 0.5s ease;
 }
@@ -1077,10 +820,9 @@ label[for="promocode"] {
 .toast {
     position: fixed;
     bottom: 5vw;
-    width: 17vw !important;
-    min-width: 180px;
-    color: #e52174 !important;
-    font-size: 1.8rem !important;
+    width: 17vw;
+    color: #e52174;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1097,16 +839,18 @@ footer {
 }
 
 .footerlogo {
-    width: 9vw;
-    min-width: 70px;
+    width: 20vw;
     margin-bottom: 1vw;
 }
 
+footer .title {
+    font-size: 8rem;
+}
+
 .dear {
-    width: 19vw;
-    min-width: 95px;
+    width: 40vw;
     position: absolute;
-    left: -7vw;
+    left: -14vw;
     filter: drop-shadow(0 0 1vw #5463e9);
     transition: filter 0.8s ease-in-out;
 }
@@ -1125,19 +869,11 @@ footer .title {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 5vw;
     margin-bottom: 3vw;
-    gap: 5vw;
 }
 
 .qrcode {
-    width: 15vw;
-    min-width: 130px;
-    border-style: solid;
-    border-color: #e52174;
-    border-radius: 1vw;
-    padding: 1vw;
-    margin: auto;
     display: none;
 }
 
@@ -1147,14 +883,12 @@ footer .title {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 25vw;
-    min-width: 195px;
-    gap: 1.5vw;
+    width: 48vw;
+    gap: 2vw;
 }
 
 .conticons svg {
-    width: 5vw;
-    min-width: 35px;
+    width: 10vw;
     stroke: #e9e9e9;
     fill: #e9e9e9;
     transition: 0.3s ease;
@@ -1172,13 +906,11 @@ footer .title {
 }
 
 .upicon {
-    width: 5.5vw !important;
-    min-width: 40px !important;
+    width: 11.8vw !important;
 }
 
 .xicon {
-    width: 4.3vw !important;
-    min-width: 30px !important;
+    width: 8vw !important;
     enable-background: new 0 0 24 24;
 }
 
@@ -1188,10 +920,8 @@ footer .title {
 }
 
 .mail {
-    width: 33vw;
-    min-width: 210px;
-    height: 4.3vw;
-    min-height: 35px;
+    width: 60vw;
+    height: 11vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1215,8 +945,7 @@ footer .title {
 }
 
 .mail svg {
-    width: 4vw;
-    min-width: 23px;
+    width: 8vw;
 }
 
 @keyframes mail {
@@ -1239,7 +968,7 @@ footer .title {
 }
 
 #copybtn {
-    font-size: 1.7rem;
+    font-size: 3.6rem;
     width: 100%;
     height: 100%;
     border: none;
@@ -1259,25 +988,23 @@ footer .title {
 #copytoast {
     position: fixed;
     bottom: 5vw;
-    width: 22vw !important;
-    min-width: 190px;
-    height: 4vw;
-    min-height: 33px;
+    width: 40vw;
+    height: 10vw;
+    z-index: 3;
 }
 
 .last {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 3rem;
     margin-top: auto;
+    z-index: 2;
 }
 
 .copyrt {
-    width: 2.2vw;
-    min-width: 13px;
+    width: 4.5vw;
     margin-right: 0.3vw;
-    margin-bottom: 1vw;
 }
 
 .footerlogo {
@@ -1295,735 +1022,161 @@ footer .title {
     min-width: 50px;
 }
 
-@media (max-width: 1200px) {
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        display: none;
-    }
-    .stockdis {
-        font-size: 1.9rem !important;
-    }
-    .stock div:not(.imgcont) {
-        margin: 1.5vw;
-        min-height: 70px;
-    }
-    #requests {
-        padding-top: 12vw;
-    }
-    #requests p {
-        margin-bottom: 8vw;
-        font-size: 3rem !important;
-        text-align: center;
-    }
-    form {
-        gap: 4vw;
-    }
-    input:not([type="radio"]), #country {
-        min-height: 25px;
-        font-size: 1.5rem !important;
-    }
-    #countrycode, #promocode {
-        border-radius: 1vw 0 0 1vw;
-    }
-    #mobile {
-        border-radius: 0 1vw 1vw 0;
-    }
-    #message {
-        min-height: 80px;
-        font-size: 1.5rem !important;
-    }
-    #promocode {
-        background-size: 3vw;
-        padding-left: 5vw;
-    }
-    input:not([type="radio"]), #country, #message, .apply, #submit {
-        border-radius: 1vw;
-    }
-}
-
-@media (max-width: 576px) {
-    .nav1 {
-        display: none !important;
-    }
-
-    .nav2 {
-        display: block !important;
-    }
-
-    .logo {
-        top: 0vw;
-        left: 0vw;
-    }
-
-    .saratit {
-        bottom: 6vw;
-    }
-
-    #about {
-        line-height: 3.5vw;
-        margin-bottom: 25vw;
-    }
-
-    .flags {
-        left: -2vw;
-        bottom: -10vw;
-    }
-
-    .sign {
-        bottom: -17vw;
-    }
-
-    .galcat {
-        gap: 1vw;
-    }
-
-    .galcat .modal-content {
-        width: 97vw !important;
-    }
-
-    .galcat .modal-body {
-        width: 99vw !important;
-        gap: 1vw;
-    }
-
-    .gal .carousel-inner {
-        margin-top: 20vw;
-    }
-
-    .pc-cont {
-        margin-bottom: 4vw;
-    }
-
-    .caption {
-        margin-bottom: 1.2vw;
-    }
-
-    .quote {
-        margin-top: 20vw;
-        margin-bottom: 10vw;
-    }
-
-    #videos {
-        padding-top: 25vw;
-    }
-
-    .vidcont {
-        gap: 4vw;
-    }
-
-    #port {
-        padding-top: 45vw;
-    }
-
-    #reviews {
-        padding-top: 25vw;
-    }
-
-    .stock {
-        padding-top: 45vw;
-    }
-
-    #promostatus {
-        font-size: 1.18rem;
-    }
-
-    #submit {
-        font-size: 1.9rem !important;
-    }
-
-    .dear {
-        left: -5vw;
-    }
-
-    .qrcode {
-        display: none;
-    }
-
-    .conticons {
-        gap: 2vw;
-    }
-
-    .mail {
-        margin-top: 2vw;
-        margin-bottom: 7vw;
-    }
-
-    .copyrt, .footerlogo, .devlogo {
-        margin-bottom: 1.5vw !important;
-    }
-}
-
-@media (min-width: 360px) {
-    html {
-        font-size: 2.2vw;
-    }
-
-    .offcanvas {
-        width: 50vw !important;
-    }
-
-    .offcanvas svg {
-        width: 10vw;
-    }
-
-    .offcanvas-body {
-        gap: 6vw;
-    }
-
-    .offcanvas-body img {
-        width: 70vw;
-        right: -5vw;
-    }
-
-    .saraname {
-        font-size: 5.8rem;
-    }
-
-    .saratit {
-        bottom: 6vw;
-        font-size: 2.2rem;
-    }
-
-    #about {
-        min-width: 330px;
-        line-height: 3.7vw;
-        margin-bottom: 25vw;
-    }
-
-    .flags {
-        min-width: 160px;
-        left: -2.5vw;
-        bottom: -13vw;
-    }
-
-    .sign {
-        min-width: 80px;
-        bottom: -19vw;
-    }
-
-    .galcat {
-        gap: 1vw;
-    }
-
-    .galcat img {
-        min-width: 106.8px;
-    }
-
-    .galcat .modal-content {
-        width: 97vw !important;
-    }
-
-    .galcat .modal-body {
-        width: 99vw !important;
-        gap: 1vw;
-    }
-
-    .gal .carousel-inner {
-        margin-top: 35vw;
-        min-width: 340px;
-        min-height: 390px;
-    }
-
-    .gal .carousel-inner img {
-        min-width: 340px;
-    }
-
-    .pc-cont {
-        margin-bottom: 5vw;
-    }
-
-    .caption {
-        font-size: 1.64rem;
-    }
-
-    .carousel-indicators {
-        min-width: 340px;
-    }
-
-    .quote {
-        min-width: 330px;
-        margin-top: 40vw;
-        margin-bottom: 10vw;
-    }
-
-    .ban {
-        min-width: 340px;
-    }
-
-    #videos {
-        padding-top: 45vw;
-    }
-
-    .vidcont {
-        gap: 4vw;
-        min-width: 340px;
-    }
-
-    .vidcont img {
-        min-width: 160px;
-    }
-
-    #port {
-        padding-top: 45vw;
-    }
-
-    #reviews {
-        padding-top: 30vw;
-        min-width: 140px;
-    }
-
-    .rev {
-        min-width: 340px;
-        min-height: 180px;
-    }
-
-    .stock {
-        padding-top: 80vw;
-        font-size: 3.2rem;
-    }
-
-    .stock div:not(.imgcont) {
-        min-width: 320px;
-        font-size: 2.5rem;
-    }
-
-    .stock img {
-        min-width: 55px;
-        margin: 0;
-    }
-
-    #requests {
-        min-width: 100vw;
-    }
-
-    input, #country, #mobcont {
-        min-width: 300px;
-    }
-
-    #countrycode {
-        min-width: 50px;
-    }
-
-    #mobile {
-        min-width: 251px;
-    }
-
-    #message {
-        min-width: 300px;
-    }
-
-    label[for="budget"] {
-        min-width: 300px;
-    }
-
-    #budget {
-        min-width: 150px;
-    }
-
-    .radcont {
-        font-size: 1.36rem;
-        gap: 1vw;
-    }
-
-    input[type="radio"] {
-        min-width: 9px;
-        margin-bottom: 0.5vw;
-    }
-
-    .promcont {
-        min-width: 300px;
-    }
-
-    label[for="promocode"] {
-        min-width: 150px;
-    }
-
-    #promocode {
-        min-width: 104px;
-        background-size: 4.5vw;
-        background-position: 1.5vw;
-        padding-left: 7vw;
-    }
-
-    .apply {
-        min-width: 35px;
-        font-size: 1.3rem;
-    }
-
-    .dear {
-        left: -7vw;
-        min-width: 105px;
-    }
-
-    .conticons {
-        min-width: 165px;
-    }
-
-    .conticons svg {
-        min-width: 35px;
-    }
-
-    .upicon {
-        min-width: 40px !important;
-    }
-
-    .xicon {
-        min-width: 30px !important;
-    }
-
-    .mail {
-        margin-top: 2vw;
-        margin-bottom: 7vw;
-        min-width: 225px;
-        min-height: 35px;
-    }
-
-    .mail svg {
-        min-width: 23px;
-    }
-
-    .copyrt {
-        min-width: 14px;
-    }
-
-    .footerlogo {
-        min-width: 60px;
-    }
-
-    .last p svg {
-        min-width: 13px;
-    }
-
-    .devlogo {
-        min-width: 60px;
-    }
-
-    .copyrt, .footerlogo, .devlogo {
-        margin-bottom: 1.7vw !important;
-    }
-}
-
-@media (min-width: 412px) {
-    html {
-        font-size: 1.9vw;
-    }
-
-    .offcanvas {
-        width: 50vw !important;
-    }
-
-    .offcanvas svg {
-        width: 11vw;
-    }
-
-    .offcanvas-body {
-        gap: 8vw;
-    }
-
-    .offcanvas-body img {
-        width: 70vw;
-        right: -5vw;
-    }
-
-    .saratit {
-        bottom: 4vw;
-    }
-
-    #about {
-        min-width: 370px;
-        line-height: 4.7vw;
-        margin-top: 20vw;
-        margin-bottom: 35vw;
-        font-size: 2.2rem;
-    }
-
-    .flags {
-        min-width: 180px;
-        bottom: -13vw;
-    }
-
-    .sign {
-        min-width: 90px;
-        bottom: -19vw;
-    }
-
-    .galcat img {
-        min-width: 120px;
-    }
-
-    .galcat p {
-        font-size: 2.2rem;
-    }
-
-    .modal p {
-        font-size: 1.42rem;
-    }
-
-    .gal .carousel-inner {
-        min-width: 390px;
-        min-height: 450px;
-        margin-top: 45vw;
-    }
-
-    .gal .carousel-inner img {
-        min-width: 390px;
-    }
-
-    .pc-cont {
-        margin-bottom: 5vw;
-    }
-
-    .pause svg {
-        min-width: 45px;
-    }
-
-    .caption {
-        font-size: 1.82rem;
-        margin-bottom: 1vw;
-    }
-
-    .carousel-indicators {
-        min-width: 390px;
-    }
-
-    .quote {
-        min-width: 380px;
-        margin-top: 65vw;
-    }
-
-    .ban {
-        min-width: 390px;
-    }
-
-    #videos {
-        padding-top: 55vw;
-    }
-
-    .vidcont {
-        min-width: 390px;
-    }
-
-    .vidcont img {
-        min-width: 180px;
-    }
-
-    #port {
-        padding-top: 80vw;
-    }
-
-    #reviews {
-        padding-top: 50vw;
-    }
-
-    .rev {
-        min-width: 390px;
-        min-height: 220px;
-        margin-bottom: 30vw;
-    }
-
-    .revtitle, .revtxt {
-        font-size: 2rem;
-    }
-
-    .stock {
-        margin-top: 2vw;
-    }
-
-    .stockdis {
-        font-size: 2.3rem !important;
-    }
-
-    .stock div:not(.imgcont) {
-        min-width: 370px;
-    }
-
-    .stock img {
-        min-width: 55px;
-    }
-
-    #requests {
-        min-width: 100vw;
-    }
-
-    input, #country, #mobcont {
-        min-width: 320px;
-    }
-
-    #countrycode {
-        min-width: 50px;
-    }
-
-    #mobile {
-        min-width: 271px;
-    }
-
-    #message {
-        min-width: 320px;
-    }
-
-    label[for="budget"] {
-        min-width: 320px;
-    }
-
-    #budget {
-        min-width: 160px;
-    }
-
-    .radcont {
-        font-size: 1.38rem;
-    }
-
-    input[type="radio"] {
-        min-width: 10px;
-        margin-bottom: 0.5vw;
-    }
-
-    .promcont {
-        min-width: 320px;
-    }
-
-    label[for="promocode"] {
-        min-width: 161px;
-    }
-
-    #promocode {
-        min-width: 108.5px;
-        background-size: 4vw;
-        background-position: 1.2vw;
-        padding-left: 6vw;
-    }
-
-    .apply {
-        min-width: 40px;
-    }
-
-    .dear {
-        left: -6vw;
-        min-width: 120px;
-    }
-
-    .conticons {
-        min-width: 190px;
-    }
-
-    .mail {
-        min-width: 215px;
-        min-height: 40px;
-    }
-
-    .mail svg {
-        min-width: 25px;
-    }
-
-    .copyrt, .footerlogo, .devlogo {
-        margin-bottom: 1.8vw !important;
-    }
-}
-
-@media (min-width: 540px) {
-    html {
-        font-size: 1.5vw;
-    }
-
-    .offcanvas svg {
-        width: 8vw;
-    }
-
-    .offcanvas-body {
-        gap: 4vw;
-    }
-
-    .offcanvas-body img {
-        width: 340px;
-        right: 1vw;
-    }
-
-    .gal .carousel-inner {
-        margin-top: 25vw !important;
-        min-height: 470px !important;
-    }
-
-    .caption {
-        font-size: 1.9rem;
-    }
-
-    #videos {
-        padding-top: 30vw;
-    }
-
-    #port {
-        padding-top: 50vw;
-    }
-
-    .download {
-        margin-bottom: 30vw;
-    }
-
-    #reviews {
-        padding-top: 30vw;
-    }
-
-    .stock {
-        padding-top: 20vw;
-    }
-
-    input:not([type="radio"]), #country, #mobcont {
-        min-width: 400px;
-        min-height: 35px;
-    }
-
-    #countrycode {
-        min-width: 60px;
-    }
-
-    #mobile {
-        min-width: 341px;
-    }
-
-    #message {
-        min-width: 400px;
-    }
-
-    label[for="budget"] {
-        min-width: 400px;
-    }
-
-    .promcont {
-        min-width: 400px;
-    }
-    
-    #promocode {
-        background-size: 20px;
-        padding-left: 5.5vw;
-        min-width: 105px;
-    }
-    
-    #submit {
-        min-height: 40px;
-        min-width: 150px;
-    }
-
-    .dear {
-        min-width: 140px;
-    }
-
-    .mail {
-        min-width: 250px;
-    }
+.copyrt, .footerlogo, .devlogo {
+    margin-bottom: 1.5vw !important;
 }
 
 @media (min-width: 712px) {
+    html {
+        font-size: 0.8vw;
+    }
+    
+    .nav2 {
+        display: none;
+    }
+    
+    .nav1{
+        display: block;
+        position: fixed;
+        right: 2vw;
+        display: flex;
+        z-index: 3;
+        height: 100vh;
+    }
+
+    .nav1 a {
+        width: 100%;
+        height: 100%;
+    }
+    
     .iconcont {
-        margin: 1.3vw;
-        min-width: 57px;
-        min-height: 57px;
+        background-color: #2133e5;
+        border-radius: 50%;
+        width: 9vw;
+        height: 9vw;
+        margin: 1.5vw;
+        transition: 0.3s ease;
+        overflow: hidden;
     }
-
+    
+    .iconcont:hover {
+        background-color: #e52174;
+    }
+    
+    .iconcont a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon {
+        stroke: #e9e9e9;
+        fill: #e9e9e9;
+        width: 100%;
+        height: 100%;
+        padding: 0.5vw;
+    }
+    
+    .homeic {
+        stroke-width: 0.5;
+    }
+    
+    @keyframes home {
+        from {
+            transform: translateY(5vw);
+        }
+    
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    .iconcont:hover .homeic {
+        animation-name: home;
+        animation-duration: 0.5s;
+        position: relative;
+    }
+    
+    .aboutic {
+        stroke-width: 0.5;
+        transition: transform 0.5s ease;
+    }
+    
+    .iconcont:hover .aboutic {
+        transform: rotate(360deg);
+    }
+    
+    .galic {
+        transition: transform 0.3s ease;
+    }
+    
+    .iconcont:hover .galic {
+        transform: rotateY(360deg);
+    }
+    
     .vidic {
-        min-width: 45px;
+        transition: transform 0.3s ease;
+        width: 8vw;
+        enable-background: new 0 0 130.001 95.001;
+        fill: none;
+        stroke: #e9e9e9;
+        stroke-width: 11;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+    }
+    
+    .iconcont:hover .vidic {
+        transform: rotateY(360deg);
+    }
+    
+    @keyframes port {
+        from {
+            transform: translateY(-4vw);
+        }
+    
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    .iconcont:hover .port {
+        animation: port 0.5s ease;
+        position: relative;
+    }
+    
+    .revic {
+        stroke-width: 15;
+        transition: transform 0.5s ease;
+    }
+    
+    @keyframes rev {
+        from {
+            transform: translateX(-4vw);
+        }
+    
+        to {
+            transform: translateX(4vw);
+        }
+    }
+    
+    .iconcont:hover .revic {
+        animation: rev 1s ease infinite;
+        position: relative;
+        transform: scale(1.2);
+    }
+    
+    .reqic {
+        stroke-width: 0.05;
+        transition: transform 0.5s ease;
+    }
+    
+    .iconcont:hover .reqic {
+        transform: rotate(-25deg) scale(1.2);
     }
 
-    .logo {
-        min-width: 150px;
+    .sarapic {
+        min-width: 1200px;
     }
 
     .saraname {
@@ -2035,104 +1188,71 @@ footer .title {
     }
 
     #about {
-        min-width: 490px;
+        width: 70vw;
         margin-top: 7vw;
     }
 
     .flags {
-        min-width: 240px;
-        bottom: -12vw;
-        left: -1.8vw;
+        width: 45vw;
     }
 
     .sign {
-        min-width: 140px;
-        bottom: -18vw;
+        width: 25vw;
     }
 
     .galcat img {
-        min-width: 160px;
+        width: 22vw;
     }
 
-    .modal p {
-        font-size: 1.45rem;
+    .galcat .modal-body {
+        width: 80vw;
     }
 
     .gal .carousel-inner {
-        min-height: 580px !important;
-        min-width: 500px;
-        margin-top: 30vw;
+        width: 70vw;
+        height: 88vw !important;
     }
 
-    .gal img {
-        min-width: 500px !important;
-    }
-
-    .pc-cont {
-        margin-bottom: 2.5vw;
-    }
-
-    .pause svg {
-        min-width: 60px;
-    }
-
-    .caption {
-        margin-bottom: 1.5vw;
+    .gal .carousel-inner img {
+        width: 70vw !important;
     }
 
     .carousel-indicators {
-        width: 500px;
+        width: 70vw;
     }
 
     .quote {
-        min-width: 490px;
-        margin-top: 25vw;
-        margin-bottom: 10vw;
+        width: 70vw;
     }
 
     .ban {
-        width: 70vw !important;
-        margin-top: 15vw;
-    }
-
-    #videos {
-        padding-top: 30vw;
-    }
-
-    .vidcont {
-        min-width: 510px;
+        width: 70vw;
     }
 
     .vidcont img {
-        min-width: 230px;
+        width: 33vw;
     }
 
     .vidcont svg {
-        min-width: 70px;
-    }
-
-    #port {
-        padding-top: 30vw;
+        width: 12vw;
     }
 
     .download {
-        min-width: 250px;
-        min-height: 70px;
+        width: 40vw;
+        height: 12vw;
     }
 
     #reviews {
-        min-width: 230px;
-        padding-top: 30vw;
+        width: 45vw;
     }
 
     .rev {
-        min-width: 500px;
-        min-height: 300px;
+        width: 67vw;
+        height: 57vw;
     }
 
     .stock {
-        font-size: 3.25rem;
-        margin-top: 20vw;
+        font-size: 7rem;
     }
 
     .stockdis {
@@ -2140,12 +1260,13 @@ footer .title {
     }
 
     .stock div:not(.imgcont) {
-        min-width: 500px;
-        font-size: 2.7rem;
+        width: 70vw;
+        height: 15vw;
+        font-size: 5.5rem;
     }
 
     .stock img {
-        min-width: 83px;
+        width: 12.5vw;
     }
 
     #requests p {
@@ -2153,534 +1274,263 @@ footer .title {
     }
 
     form {
-        min-width: 570px;
+        width: 70vw;
     }
 
     input:not([type="radio"]), #country, #mobcont {
-        min-width: 260px;
-        min-height: 40px;
-    }
-
-    #countrycode {
-        min-width: 75px;
+        width: 70vw;
     }
 
     #mobile {
-        min-width: 186px;
+        width: 50vw;
     }
 
     #message {
-        min-width: 535px;
-        min-height: 130px;
-    }
-
-    label[for="budget"] {
-        min-width: 535px;
+        height: 25vw;
     }
 
     #budget {
-        min-width: 260px;
+        width: 36vw;
     }
 
     .radcont {
-        font-size: 1.68rem;
-        gap: 1vw;
+        font-size: 3.1rem;
     }
 
     input[type="radio"] {
-        min-width: 14px;
-        margin-top: 1.5vw;
-    }
-
-    .promcont {
-        min-width: 535px;
-    }
-
-    label[for="promocode"] {
-        min-width: 260px;
+        width: 2.4vw;
     }
 
     #promocode {
-        min-width: 183px;
-    }
-
-    .apply {
-        min-width: 55px;
-        font-size: 1.4rem;
-    }
-
-    #promostatus {
-        font-size: 1.37rem;
+        width: 22.9vw;
+        font-size: 2.9rem;
     }
 
     #submit {
-        min-width: 180px;
-        min-height: 50px !important;
-        margin-top: 1.5vw;
+        width: 35vw;
+        height: 10vw;
+        font-size: 4.7rem;
     }
 
-    .toast {
-        min-width: 270px;
+    #copybtn {
+        font-size: 4.5rem;
     }
 
-    .dear {
-        min-width: 200px;
+    .last {
+        font-size: 3.9rem;
     }
 
-    .conticons {
-        min-width: 240px;
+    .last p svg {
+        width: 4.5vw;
     }
 
-    .conticons svg {
-        min-width: 50px;
+    .footerlogo {
+        width: 17vw;
     }
 
-    .upicon {
-        min-width: 60px !important;
-    }
-
-    .xicon {
-        min-width: 40px !important;
-    }
-
-    .mail {
-        min-width: 370px;
-        min-height: 60px;
-    }
-
-    .mail svg {
-        min-width: 45px;
-    }
-
-    #copytoast {
-        min-width: 350px;
-        min-height: 60px;
-    }
-
-    .copyrt, .footerlogo, .devlogo {
-        margin-bottom: 1.5vw;
-    }
-    .footerlogo, .devlogo {
-        min-width: 95px;
+    .devlogo {
+        width: 14vw;
     }
 }
 
 @media (min-width: 768px) {
-    .galcat img {
-        min-width: 170px;
+    .gal .carousel-inner {
+        margin-top: 30vw;
     }
 
-    .modal p {
-        font-size: 1.42rem;
-    }
-    
-    .rev {
-        min-height: 350px;
-    }
-    .stock div:not(.imgcont) {
-        min-width: 550px;
-    }
-    .stock img {
-        min-width: 85px;
-    }
-    input:not([type="radio"]), #country, #mobcont {
-        min-width: 277px;
-    }
-    #mobile {
-        min-width: 203px;
-    }
-    #message {
-        min-width: 570px;
-    }
-    label[for="budget"] {
-        min-width: 570px;
+    #videos {
+        padding-top: 25vw;
     }
 
-    #budget {
-        min-width: 277px;
-    }
-    .promcont {
-        min-width: 570px;
+    #port {
+        padding-top: 40vw;
     }
 
-    label[for="promocode"] {
-        min-width: 277px;
+    .download {
+        margin-bottom: 15vw;
     }
-    #promocode {
-        min-width: 173px;
-    }
-    .apply {
-        font-size: 1.63rem;
-        min-width: 80px;
-    }
-    #promostatus {
-        font-size: 1.28rem;
+
+    #reviews {
+        width: 40vw;
+        padding-top: 25vw;
     }
 }
 
 @media (min-width: 820px) {
+    html {
+        font-size: 0.7vw;
+    }
+    
+    .iconcont {
+        margin: 1vw;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .vidic {
+        width: 7vw;
+    }
+
+    .sarapic {
+        min-width: 1000px;
+    }
+
+    #about {
+        line-height: 4vw;
+    }
+
+    .flags {
+        width: 40vw;
+        left: -2.5vw;
+    }
+
+    .sign {
+        width: 22vw;
+        margin-bottom: 2vw;
+    }
+
+    .galcat {
+        gap: 1vw;
+        width: 75vw;
+    }
+
     .galcat img {
-        min-width: 180px;
+        width: 17.5vw;
+    }
+
+    .galcat p {
+        font-size: 4rem;
     }
 
     .modal p {
-        font-size: 1.41rem;
+        font-size: 3.4rem;
     }
-    
-    .gal .carousel-inner {
-        min-width: 570px;
-        min-height: 650px !important;
+
+    .pause svg {
+        width: 10vw;
     }
-    .gal .carousel-inner img {
-        min-width: 570px !important;
-    }
-    
-    .carousel-indicators {
-        min-width: 570px;
+
+    #reviews {
+        width: 30vw;
     }
 
     .rev {
-        min-height: 420px;
+        height: 45vw;
     }
 
     #requests {
-        min-width: 805px;
+        width: 98.2vw;
     }
 
-    input:not([type="radio"]), #country, #mobcont {
-        min-width: 276px;
+    #requests p {
+        width: 75vw;
     }
 
-    #countrycode {
-        min-width: 75px;
-    }
-
-    #mobile {
-        min-width: 202px;
-    }
-    #message {
-        min-width: 570px;
-    }
-    label[for="budget"] {
-        min-width: 570px;
-    }
-    #budget {
-        min-width: 276px;
-    }
-    input[type="radio"] {
-        min-width: 16px;
-    }
-    .promcont {
-        min-width: 570px;
-    }
-    label[for="promocode"] {
-        min-width: 276px;
-    }
-    #promocode {
-        min-width: 170px;
-    }
-    .dear {
-        min-width: 220px;
-    }
-    .qrcode {
-        min-width: 160px;
-    }
-    .conticons {
-        min-width: 280px;
-    }
-    .conticons svg {
-        min-width: 60px;
-    }
-    .upicon {
-        min-width: 70px !important;
-    }
-    .xicon {
-        min-width: 50px !important;
-    }
-    .copyrt, .last p svg {
-        min-width: 25px;
-    }
-}
-
-@media (min-width: 853px) {
-    .modal p {
-        font-size: 1.36rem;
-    }
-    
-    .rev {
-       min-height: 430px;
-    }
-
-    #requests {
-        min-width: 838px;
-    }
     form {
-        min-width: 700px;
+        width: 80vw;
+        gap: 2vw;
     }
-    input:not([type="radio"]), #country, #mobcont {
-        min-width: 300px;
-        min-height: 45px;
+
+    input, #country, #mobcont, #budget, label[for="promocode"] {
+        width: 36vw !important;
+        font-size: 2.98rem;
     }
+
+    input, #countrycode, #mobile, #budget, #promocode {
+        padding: 1.5vw;
+    }
+
+    #country {
+        padding: 1.8vw;
+    }
+
     #countrycode {
-        min-width: 85px;
+        width: 10vw !important;
     }
+
     #mobile {
-        min-width: 216px;
+        width: 26vw !important;
     }
+
+    #message, label[for="budget"], .promcont {
+        width: 74vw;
+    }
+
     #message {
-        min-width: 620px;
-    }
-    label[for="budget"] {
-        min-width: 620px;
+        font-size: 2.98rem;
+        height: 18vw;
     }
 
-    #budget {
-        min-width: 300px;
-    }
-    
-    .promcont {
-        min-width: 620px;
+    .radcont {
+        font-size: 3.8rem;
     }
 
-    label[for="promocode"] {
-        min-width: 300px;
+    input[type="radio"] {
+        width: 2vw !important;
     }
+
     #promocode {
-        min-width: 193px;
+        width: 24.33vw !important;
+        padding-left: 7vw;
     }
+
     #submit {
-        min-width: 200px;
-        min-height: 60px !important;
+        width: 30vw !important;
+        height: 8vw;
+        margin-top: 3vw;
     }
+
     .dear {
-        min-width: 225px;
+        width: 33vw;
+        left: -11vw;
+    }
+
+    .qrcode {
+        display: block;
+        width: 20vw;
+        min-width: 130px;
+        border-style: solid;
+        border-color: #e52174;
+        border-radius: 1vw;
+        padding: 1vw;
+        margin: auto;
+    }
+
+    .conticons {
+        width: 38vw;
+    }
+
+    .conticons svg {
+        width: 7vw;
+    }
+
+    .upicon {
+        width: 8vw !important;
+    }
+
+    .xicon {
+        width: 6vw !important;
+    }
+
+    .mail {
+        width: 55vw;
+        height: 10vw;
     }
 }
 
 @media (min-width: 912px) {
-    .logo{
-        min-width: 200px;
-    }
-    
-    .flags {
-        min-width: 300px;
-    }
-
-    .sign {
-        min-width: 170px;
-    }
-    
-    .galcat img {
-        min-width: 210px;
-    }
-
-    .modal p {
-        font-size: 1.48rem;
-    }
-    
-    .gal .carousel-inner {
-        min-width: 650px;
-        min-height: 750px !important;
-    }
-    
-    .gal .carousel-inner img {
-        min-width: 650px !important;
-    }
-    
-    .pause svg {
-        min-width: 70px;
-    }
-    
-    .carousel-indicators {
-        min-width: 650px;
-    }
-    .vidcont {
-        min-width: 700px;
-    }
-    .vidcont img {
-        min-width: 280px;
-    }
-    .rev {
-        min-width: 600px;
-    }
-    .stock div:not(.imgcont) {
-        min-width: 650px;
-    }
-    .stock img {
-        min-width: 105px;
-    }
     #requests {
-        width: 100vw !important;
-    }
-    form {
-        min-width: 800px;
-    }
-    input:not([type="radio"]), #country, #mobcont {
-        min-width: 340px;
-        min-height: 50px;
-    }
-
-    #countrycode {
-        min-width: 95px;
-    }
-
-    #mobile {
-        min-width: 246px;
-    }
-    #message {
-        min-width: 700px;
-    }
-     label[for="budget"] {
-        min-width: 700px;
-    }
-    #budget {
-        min-width: 340px;
-    }
-    input[type="radio"] {
-        min-width: 19px;
-    }
-    .promcont {
-        min-width: 700px;
-    }
-    label[for="promocode"] {
-        min-width: 340px;
-    }
-    #promocode {
-        min-width: 221px;
-        background-size: 32px;
-        padding-left: 5.5vw;
-    }
-    .apply {
-        min-width: 90px;
-    }
-    #submit {
-        min-width: 230px;
-        min-height: 70px !important;
-    }
-    .dear {
-        min-width: 240px;
-    }
-    .conticons {
-        min-width: 290px;
-    }
-    .mail {
-        min-width: 450px;
-        min-height: 70px;
+        width: 100vw;
     }
 }
 
 @media (min-width: 1024px) {
-    .iconcont {
-        min-width: 70px;
-        min-height: 70px;
-    }
-    .vidic {
-        min-width: 53px;
-    }
-    
-    .flags {
-        min-width: 320px;
-    }
-    .sign {
-        min-width: 180px;
-    }
-
-    .galcat {
-        gap: 0.2vw;
-    }
-    
-    .galcat img {
-        min-width: 178px;
-    }
-
-    .galcat p {
-        font-size: 1.9rem;
-    }
-
-    .modal p {
-        font-size: 1.12rem;
-    }
-    
-    .gal .carousel-inner {
-        min-height: 820px !important;
-    }
-    .gal .carousel-inner img {
-        min-width: 700px !important;
-    }
-    
-    .pause svg {
-        min-width: 80px;
-    }
-    
-    .carousel-indicators {
-        min-width: 700px !important;
-    }
-    .download {
-        min-width: 290px;
-        min-height: 80px;
-    }
-    .rev {
-        min-height: 520px;
-    }
-    .stock img {
-        min-width: 113px;
-        margin: 0;
-    }
     #requests {
-        width: 98.5vw !important;
-    }
-    form {
-        min-width: 800px;
-    }
-    input:not([type="radio"]), #country, #mobcont {
-        min-width: 370px;
-        min-height: 55px;
-    }
-
-    #countrycode {
-        min-width: 100px;
-    }
-
-    #mobile {
-        min-width: 271px;
-    }
-    #message {
-        min-width: 760px;
-        min-height: 150px;
-    }
-    label[for="budget"] {
-        min-width: 760px;
-    }
-    #budget {
-        min-width: 370px;
-    }
-    .promcont {
-        min-width: 760px;
-    }
-    label[for="promocode"] {
-        min-width: 370px;
-    }
-    #promocode {
-        min-width: 238px;
-    }
-    .apply {
-        font-size: 1.7rem;
-        min-width: 100px;
-    }
-    #submit {
-        min-height: 80px !important;
-        min-width: 250px;
-        font-size: 1.8rem !important;
-    }
-    .dear {
-        min-width: 250px;
-    }
-    .copyrt, .last p svg {
-        min-width: 30px;
+        width: 98.5vw;
     }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     html {
         font-size: 1.2vw;
     }
@@ -2740,6 +1590,19 @@ footer .title {
         min-width: 500px !important;
     }
 
+    .carousel-control-next, .carousel-control-prev {
+        cursor: default !important;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        cursor: pointer;
+    }
+
+    .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+        background-color: #e52174;
+        border-radius: 50%;
+    }
+
     .pc-cont {
         bottom: -2.5vw;
     }
@@ -2777,4 +1640,4 @@ footer .title {
         font-size: 3rem;
         text-align: center;
     }
-}
+}*/
