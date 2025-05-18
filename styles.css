@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
 body {
@@ -241,7 +241,7 @@ header::before {
 
 .galcat img {
     width: 30vw;
-    border-radius: 1vw;
+    border-radius: 1vw !important;
     padding: 0;
 }
 
@@ -476,13 +476,14 @@ video {
     align-items: center;
     margin-top: 5vw;
     font-size: 6rem;
+    border-radius: 1vw;
 }
 
 .btn-custom {
     color: #e9e9e9;
     border-color: #e52174;
     border-width: 0.2vw;
-    transition: 1s ease;
+    transition: 0.3s ease;
 }
 
 .btn-custom:hover {
@@ -490,7 +491,7 @@ video {
 }
 
 .btn-custom:active {
-    font-size: 1.3rem;
+    font-size: 5.5rem;
 }
 
 #reviews {
@@ -622,6 +623,7 @@ video {
     font-size: 7rem;
     margin-bottom: 8vw;
     text-align: center;
+    width: 90vw;
 }
 
 form {
@@ -748,8 +750,8 @@ label[for="promocode"] {
     background-repeat: no-repeat;
     background-position: 1.3vw;
     padding-left: 6.5vw;
-    width: 27.8vw;
-    font-size: 3.15rem;
+    width: 26.37vw;
+    font-size: 2.9rem;
     border-radius: 0.5vw 0 0 0.5vw;
     box-shadow: none;
 }
@@ -759,7 +761,8 @@ label[for="promocode"] {
     background-color: #e9e9e9;
     color: #e52174;
     font-size: 3.5rem;
-    transition: 0.5s ease;
+    width: 5vw;
+    transition: 0.3s ease;
     cursor: default !important;
     display: flex;
     justify-content: center;
@@ -771,7 +774,7 @@ label[for="promocode"] {
 }
 
 .clear:active {
-    font-size: 0.5rem;
+    font-size: 2rem;
 }
 
 .apply {
@@ -779,22 +782,18 @@ label[for="promocode"] {
     color: #e9e9e9;
     border-radius: 0.5vw;
     border: none;
-    padding: 1vw;
+    width: 14vw;
     font-size: 3.5rem;
-    transition: 0.5s ease;
-}
-
-.apply:hover {
-    background-color: #4cc45e;
+    transition: 0.3s ease;
 }
 
 .apply:active {
-    font-size: 1rem;
+    font-size: 2.8rem;
 }
 
 #promostatus {
     margin-left: auto;
-    font-size: 1.18rem;
+    font-size: 3rem;
 }
 
 #submit {
@@ -806,7 +805,7 @@ label[for="promocode"] {
     background-color: #e52174;
     font-weight: 500;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 #submit:hover {
@@ -814,19 +813,21 @@ label[for="promocode"] {
 }
 
 #submit:active {
-    font-size: 1.3rem !important;
+    font-size: 3.7rem;
 }
 
 .toast {
     position: fixed;
-    bottom: 5vw;
-    width: 17vw;
+    bottom: 8vw;
+    width: 45vw;
+    height: 12vw;
     color: #e52174;
-    font-size: 1.8rem;
+    font-size: 4.5rem;
+    border-radius: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 footer {
@@ -982,14 +983,14 @@ footer .title {
 }
 
 #copybtn:active {
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 #copytoast {
     position: fixed;
-    bottom: 5vw;
-    width: 40vw;
-    height: 10vw;
+    bottom: 10vw;
+    width: 55vw;
+    height: 12vw;
     z-index: 3;
 }
 
@@ -1175,6 +1176,10 @@ footer .title {
         transform: rotate(-25deg) scale(1.2);
     }
 
+    .tooltip {
+        display: none;
+    }
+
     .sarapic {
         min-width: 1200px;
     }
@@ -1289,7 +1294,7 @@ footer .title {
         height: 25vw;
     }
 
-    #budget {
+    #budget, label[for="promocode"] {
         width: 36vw;
     }
 
@@ -1302,14 +1307,26 @@ footer .title {
     }
 
     #promocode {
-        width: 22.9vw;
-        font-size: 2.9rem;
+        width: 21.26vw;
+        font-size: 2.65rem;
+    }
+
+    #promostatus {
+        font-size: 2.8rem;
+    }
+
+    .apply {
+        width: 10vw;
     }
 
     #submit {
         width: 35vw;
         height: 10vw;
         font-size: 4.7rem;
+    }
+
+    .toast {
+        font-size: 5.5rem;
     }
 
     #copybtn {
@@ -1470,8 +1487,12 @@ footer .title {
     }
 
     #promocode {
-        width: 24.33vw !important;
+        width: 21vw !important;
         padding-left: 7vw;
+    }
+
+    #promostatus {
+        font-size: 3.6rem;
     }
 
     #submit {
@@ -1530,114 +1551,320 @@ footer .title {
     }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
     html {
-        font-size: 1.2vw;
+        font-size: 0.35rem;
     }
-
     .iconcont {
-        min-width: 3vw;
-        min-height: 3vw;
+        width: 4.5vw;
+        height: 4.5vw;
         margin: 0.5vw;
     }
 
     .vidic {
-        min-width: 2vw;
+        width: 3.8vw;
+    }
+
+    .tooltip {
+        display: block;
+    }
+
+    .tooltip-inner {
+        font-size: 3rem;
+        padding: 0.5vw 1vw;
+        border-radius: 0.5vw;
+    }
+
+    .logo {
+        min-width: 220px;
+        top: 3vw;
+        left: 3vw;
+    }
+
+    .sarapic {
+        min-width: 500px;
+    }
+
+    .saraname {
+        font-size: 16rem;
+        bottom: 11vw;
+    }
+
+    .saratit {
+        bottom: 9vw;
     }
 
     #about {
-        font-size: 1.5rem;
         line-height: 3vw;
+        padding-top: 8vw;
+        margin-top: 0;
+        margin-bottom: 15vw;
     }
 
     .flags {
-        min-width: 280px;
+        width: 27vw;
         bottom: -8vw;
+        left: -1.7vw;
     }
 
     .sign {
-        min-width: 160px;
-        bottom: -12vw;
+        width: 14vw;
+        bottom: -14vw;
+    }
+
+    .title {
+        margin-top: 5vw;
+        padding-top: 0;
     }
 
     .galcat {
-        margin-bottom: 5vw !important;
+        margin-top: 2vw;
+        margin-bottom: 10vw;
+        width: 90vw;
     }
 
     .galcat img {
-        min-width: 160px;
-    }
-
-    .galcat p {
-        font-size: 1.5rem;
-    }
-
-    .galcat .modal-content, .galcat .modal-body {
-        width: 70vw !important;
-    }
-
-    .modal p {
-        font-size: 1rem;
+        width: 13vw;
     }
 
     .gal .carousel-inner {
-        margin-top: 0vw !important;
-        min-width: 500px !important;
-        min-height: 580px !important;
+        margin-top: 0;
+        width: 40vw !important;
+        height: 44vw !important;
     }
 
     .gal .carousel-inner img {
-        min-width: 500px !important;
+        width: 40vw !important;
     }
 
     .carousel-control-next, .carousel-control-prev {
         cursor: default !important;
     }
-
+    
     .carousel-control-next-icon, .carousel-control-prev-icon {
+        display: block;
         cursor: pointer;
+        padding: 1.5vw;
     }
-
+    
     .carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
         background-color: #e52174;
         border-radius: 50%;
     }
 
     .pc-cont {
-        bottom: -2.5vw;
+        margin-bottom: 0;
     }
 
     .pause svg {
-        min-width: 50px;
-        margin-bottom: 0.3vw;
+        width: 4vw;
     }
 
-    .caption {
-        font-size: 1.5rem;
+    .quote {
+        margin-top: 20vw;
     }
 
     .ban {
-        width: 80vw !important;
+        width: 80vw;
+        margin-bottom: 3vw;
+    }
+
+    #videos {
+        padding-top: 3vw;
+    }
+
+    .vidcont {
+        margin-top: 2vw;
+        width: 60vw;
+    }
+
+    .vidcont img {
+        width: 20vw;
+    }
+
+    .vidcont svg {
+        width: 6vw;
+    }
+
+    #port {
+        padding-top: 15vw;
+    }
+
+    .download {
+        width: 20vw;
+        height: 6vw;
+    }
+
+    #reviews {
+        width: 20vw;
+        padding-top: 0;
     }
 
     .rev {
-        min-height: 265px;
+        width: 60vw;
+        height: 22vw;
     }
 
-    .revtitle, .revtxt {
-        font-size: 1.5rem;
+    .stock {
+        padding-top: 20vw;
+        font-size: 10rem;
     }
 
     .stockdis {
-        font-size: 1.7rem !important;
+        font-size: 5rem;
+    }
+
+    .stock div:not(.imgcont) {
+        width: 65vw;
+        height: 10vw;
+        font-size: 7rem;
+        margin: 0.5vw;
+    }
+
+    .stock img {
+        width: 9vw;
     }
 
     #requests {
-        width: 98.8vw !important;
+        width: 98.8vw;
+        padding-top: 3vw;
     }
 
     #requests p {
-        font-size: 3rem;
-        text-align: center;
+        font-size: 8rem;
+        margin-bottom: 3vw;
     }
-}*/
+
+    form {
+        gap: 1.5vw;
+    }
+
+    input, #country, #mobcont, #budget, label[for="promocode"] {
+        width: 30vw !important;
+    }
+
+    #countrycode {
+        width: 7vw !important;
+    }
+
+    #mobile {
+        width: 23vw !important;
+    }
+
+    #message, label[for="budget"], .promcont {
+        width: 62vw;
+    }
+
+    input, #countrycode, #mobile, #budget, #promocode {
+        padding: 1vw;
+    }
+
+    #country {
+        padding: 1.2vw;
+    }
+
+    #message {
+        height: 10vw;
+    }
+
+    input[type="radio"] {
+        width: 1.3vw !important;
+    }
+
+    #promocode {
+        width: 20.15vw !important;
+        background-size: 2.5vw;
+        padding-left: 4.5vw;
+    }
+
+    .clear {
+        width: 3vw;
+    }
+
+    .apply {
+        width: 7vw;
+    }
+
+    .apply:hover {
+        background-color: #4cc45e;
+    }
+    
+    .apply:active {
+        font-size: 2.8rem;
+    }
+
+    #submit {
+        width: 20vw !important;
+        height: 5vw;
+        margin-top: 0;
+        transition: 0.5s ease;
+    }
+
+    .toast {
+        width: 25vw;
+        height: 6vw;
+    }
+
+    .dear {
+        width: 20vw;
+        left: -4vw;
+    }
+
+    .qrcode {
+        width: 15vw;
+    }
+
+    .conticons {
+        width: 30vw;
+    }
+
+    .conticons svg {
+        width: 5vw;
+    }
+
+    .upicon {
+        width: 6vw !important;
+    }
+
+    .xicon {
+        width: 4vw !important;
+    }
+
+    .mail {
+        width: 36vw;
+        height: 5.5vw;
+        margin-bottom: 3vw;
+        margin-top: 0;
+    }
+
+    .mail svg {
+        width: 4.5vw;
+    }
+
+    #copytoast {
+        font-size: 4.5rem;
+        width: 25vw;
+        height: 5vw;
+    }
+
+    .last p {
+        font-size: 3.5rem;
+    }
+
+    .last p svg {
+        width: 2.3vw;
+    }
+
+    .copyrt {
+        width: 2vw;
+        margin-bottom: 0.5vw !important;
+    }
+
+    .footerlogo {
+        width: 9vw;
+    }
+
+    .devlogo {
+        width: 7.5vw;
+    }
+}
