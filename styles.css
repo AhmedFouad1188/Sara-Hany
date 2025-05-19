@@ -705,7 +705,7 @@ label[for="budget"] {
     align-items: center;
     height: 2vw;
     margin-left: auto;
-    font-size: 3.4rem;
+    font-size: 3.3rem;
     gap: 1.7vw;
 }
 
@@ -998,7 +998,7 @@ footer .title {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2.9rem;
     margin-top: auto;
     z-index: 2;
 }
